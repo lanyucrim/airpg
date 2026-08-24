@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 8,
+  "scenarioId": "gray-harbor-black-tide-throne",
+  "version": "0.8.0",
+  "name": "灰港：黑潮王座",
+  "description": "从白鹭屋七日债务危机开始的长期城市权力跑团。",
+  "contentScope": "V4.2 是唯一权威内容源。当前可执行事件仍覆盖白鹭屋开局切片；完整 Canon、主线状态机、人物、地点、关键道具、支线、事件种子、文书模板与 60 个月时间轴已进入结构化目录，后续按阶段迁移为可玩规则。",
+  "sourceVersion": "4.2",
+  "sourceDocument": "灰港_黑潮王座_V4.2_AI_GM主线状态机与支线条件版.md",
+  "sourceSha256": "601ef8717bd9bbb239a81d487f6d3af8e70f93ab2f1061620595058735c9bc4f",
+  "catalogFile": "v4.2-catalog.json",
+  "initialWorldTime": 0,
+  "timeUnit": "minute",
+  "initialCalendar": {
+    "era": "海历",
+    "year": 621,
+    "month": 10,
+    "day": 17,
+    "hour": 23,
+    "minute": 0,
+    "daysPerMonth": 30,
+    "monthsPerYear": 12
+  },
+  "playerCharacterId": "protagonist",
+  "initialSceneId": "scene_last_seven_days"
+}

@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "trpg-server"
+version = "0.1.0"
+description = "Authoritative event-driven backend for AI-TRPG"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.116,<1.0",
+  "httpx>=0.28,<1.0",
+  "pydantic>=2.11,<3.0",
+  "uvicorn[standard]>=0.35,<1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4,<9.0",
+  "pytest-cov>=6.2,<7.0",
+]
+postgres = [
+  "psycopg[binary]>=3.2,<4.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/trpg_server"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["trpg_server"]

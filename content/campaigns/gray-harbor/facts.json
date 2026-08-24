@@ -1,0 +1,68 @@
+{
+  "facts": [
+    {
+      "id": "white_heron_debt_exists",
+      "statement": "白鹭屋确实存在一笔尚未清偿的真实债务。",
+      "truthState": "true",
+      "visibility": "player",
+      "initiallyKnownBy": ["protagonist", "martha_bell", "jenny_bell", "harvey_cole"],
+      "tags": ["debt", "opening"]
+    },
+    {
+      "id": "final_notice_terms",
+      "statement": "最后通牒要求玛莎在七日内支付第一期欠款，否则铁钩帮将接管抵押财产及经营收益。",
+      "truthState": "true",
+      "visibility": "gm",
+      "initiallyKnownBy": ["martha_bell", "jenny_bell", "harvey_cole"],
+      "tags": ["debt", "document", "opening"]
+    },
+    {
+      "id": "martha_borrowed_for_sister",
+      "statement": "玛莎三年前向铁钩帮借钱为重病的妹妹治疗，妹妹最终仍然去世。",
+      "truthState": "true",
+      "visibility": "gm",
+      "initiallyKnownBy": ["martha_bell", "jenny_bell"],
+      "tags": ["debt", "martha", "personal_history"]
+    },
+    {
+      "id": "martha_disputes_notice_total",
+      "statement": "玛莎承认真实借款尚未清偿，但坚持最后通牒上的总额并非她认可的债务数字。",
+      "truthState": "true",
+      "visibility": "gm",
+      "initiallyKnownBy": ["martha_bell"],
+      "tags": ["debt", "testimony", "investigation"]
+    },
+    {
+      "id": "white_heron_debt_inflated",
+      "statement": "最后通牒列出的总债务被人为扩大，超过真实本金、合理利息与费用之和。",
+      "truthState": "true",
+      "visibility": "gm",
+      "initiallyKnownBy": ["jenny_bell"],
+      "tags": ["debt", "hidden_truth", "investigation"]
+    },
+    {
+      "id": "jenny_forged_additional_loan",
+      "statement": "珍妮为偿还赌场债务伪造了玛莎的签名，形成一笔额外借款。",
+      "truthState": "true",
+      "visibility": "gm",
+      "initiallyKnownBy": ["jenny_bell"],
+      "tags": ["forgery", "hidden_truth", "investigation"]
+    },
+    {
+      "id": "simon_exploited_forgery",
+      "statement": "西蒙发现伪造后没有揭穿，而是利用它扩大债务并推动取得栎木街17号。",
+      "truthState": "true",
+      "visibility": "gm",
+      "initiallyKnownBy": [],
+      "tags": ["conspiracy", "property", "hidden_truth"]
+    },
+    {
+      "id": "cellar_tunnel_exists",
+      "statement": "白鹭屋地窖有一条旧排水通道通往栎木街15号废弃面包房。",
+      "truthState": "true",
+      "visibility": "gm",
+      "initiallyKnownBy": ["martha_bell", "otis_finn"],
+      "tags": ["secret_route", "location"]
+    }
+  ]
+}

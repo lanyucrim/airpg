@@ -1,0 +1,619 @@
+{
+  "schema_version": 1,
+  "dataset_id": "gray-harbor-long-memory-v1",
+  "scenario_id": "gray-harbor-black-tide-throne",
+  "campaign_id": "cmp_gray_harbor_eval",
+  "description": "《灰港：黑潮王座》阶段 5 正式版长期记忆基线，50 项案例覆盖事实、时间、更新、因果、拒答、当前路由、全文候选、语义改写、精确实体与 NPC 作用域。",
+  "memories": [
+    {
+      "memory_id": "mem_move_kitchen",
+      "source_event_id": "evt_move_kitchen",
+      "memory_type": "state_change",
+      "event_type": "character.moved",
+      "summary": "艾拉·帕克从白鹭屋一楼大厅移动到了白鹭屋厨房。",
+      "importance": 55,
+      "world_time": 10,
+      "location_id": "white_heron_kitchen",
+      "update_key": "character_location:protagonist",
+      "entities": [
+        {"entity_id": "protagonist", "role": "character"},
+        {"entity_id": "white_heron_ground_floor", "role": "from_location"},
+        {"entity_id": "white_heron_kitchen", "role": "to_location"}
+      ],
+      "scopes": [{"scope_kind": "player", "scope_id": "protagonist"}]
+    },
+    {
+      "memory_id": "mem_move_hall",
+      "source_event_id": "evt_move_hall",
+      "memory_type": "state_change",
+      "event_type": "character.moved",
+      "summary": "艾拉·帕克从白鹭屋厨房移动到了白鹭屋一楼大厅。",
+      "importance": 55,
+      "world_time": 20,
+      "location_id": "white_heron_ground_floor",
+      "update_key": "character_location:protagonist",
+      "entities": [
+        {"entity_id": "protagonist", "role": "character"},
+        {"entity_id": "white_heron_kitchen", "role": "from_location"},
+        {"entity_id": "white_heron_ground_floor", "role": "to_location"}
+      ],
+      "scopes": [{"scope_kind": "player", "scope_id": "protagonist"}]
+    },
+    {
+      "memory_id": "mem_gift_harvey",
+      "source_event_id": "evt_gift_harvey",
+      "memory_type": "interaction",
+      "event_type": "gift.accepted",
+      "summary": "哈维·科尔确实收下了艾拉·帕克递出的小刀。",
+      "importance": 65,
+      "world_time": 30,
+      "location_id": "white_heron_ground_floor",
+      "entities": [
+        {"entity_id": "protagonist", "role": "actor"},
+        {"entity_id": "harvey_cole", "role": "target"},
+        {"entity_id": "protagonist_small_knife", "role": "item"}
+      ],
+      "scopes": [
+        {"scope_kind": "player", "scope_id": "protagonist"},
+        {"scope_kind": "npc", "scope_id": "harvey_cole"}
+      ]
+    },
+    {
+      "memory_id": "mem_rel_harvey",
+      "source_event_id": "evt_rel_harvey",
+      "memory_type": "relationship",
+      "event_type": "relationship.changed",
+      "summary": "哈维·科尔因一次已确认事件改变了对艾拉·帕克的好感。",
+      "importance": 60,
+      "world_time": 30,
+      "location_id": "white_heron_ground_floor",
+      "entities": [
+        {"entity_id": "harvey_cole", "role": "subject"},
+        {"entity_id": "protagonist", "role": "object"}
+      ],
+      "scopes": [{"scope_kind": "npc", "scope_id": "harvey_cole"}]
+    },
+    {
+      "memory_id": "mem_gift_martha",
+      "source_event_id": "evt_gift_martha",
+      "memory_type": "interaction",
+      "event_type": "gift.accepted",
+      "summary": "玛莎·贝尔确实收下了艾拉·帕克递出的廉价首饰盒。",
+      "importance": 65,
+      "world_time": 40,
+      "location_id": "white_heron_ground_floor",
+      "entities": [
+        {"entity_id": "protagonist", "role": "actor"},
+        {"entity_id": "martha_bell", "role": "target"},
+        {"entity_id": "protagonist_cheap_jewelry_box", "role": "item"}
+      ],
+      "scopes": [
+        {"scope_kind": "player", "scope_id": "protagonist"},
+        {"scope_kind": "npc", "scope_id": "martha_bell"}
+      ]
+    },
+    {
+      "memory_id": "mem_rel_martha",
+      "source_event_id": "evt_rel_martha",
+      "memory_type": "relationship",
+      "event_type": "relationship.changed",
+      "summary": "玛莎·贝尔因一次已确认事件改变了对艾拉·帕克的信任。",
+      "importance": 55,
+      "world_time": 40,
+      "location_id": "white_heron_ground_floor",
+      "entities": [
+        {"entity_id": "martha_bell", "role": "subject"},
+        {"entity_id": "protagonist", "role": "object"}
+      ],
+      "scopes": [{"scope_kind": "npc", "scope_id": "martha_bell"}]
+    },
+    {
+      "memory_id": "mem_bribe_collector",
+      "source_event_id": "evt_bribe_collector",
+      "memory_type": "interaction",
+      "event_type": "bribe.rejected",
+      "summary": "铁钩帮收账人甲没有接受艾拉·帕克递出的小刀作为贿赂。",
+      "importance": 65,
+      "world_time": 50,
+      "location_id": "white_heron_ground_floor",
+      "entities": [
+        {"entity_id": "protagonist", "role": "actor"},
+        {"entity_id": "iron_hook_collector_one", "role": "target"},
+        {"entity_id": "protagonist_small_knife", "role": "item"}
+      ],
+      "scopes": [
+        {"scope_kind": "player", "scope_id": "protagonist"},
+        {"scope_kind": "npc", "scope_id": "iron_hook_collector_one"}
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source_memory_id": "mem_move_hall",
+      "target_memory_id": "mem_move_kitchen",
+      "relation_type": "updates",
+      "source_event_id": "evt_move_hall"
+    },
+    {
+      "source_memory_id": "mem_rel_harvey",
+      "target_memory_id": "mem_gift_harvey",
+      "relation_type": "caused_by",
+      "source_event_id": "evt_rel_harvey"
+    },
+    {
+      "source_memory_id": "mem_rel_martha",
+      "target_memory_id": "mem_gift_martha",
+      "relation_type": "caused_by",
+      "source_event_id": "evt_rel_martha"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "factual-player-remembers-harvey-gift",
+      "ability": "factual_recall",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "player",
+        "perspective_id": "protagonist",
+        "entity_ids": ["protagonist", "harvey_cole"],
+        "event_types": ["gift.accepted"]
+      },
+      "expected_selected_ids": ["mem_gift_harvey"]
+    },
+    {
+      "case_id": "factual-harvey-sees-interaction-and-private-relation",
+      "ability": "factual_recall",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "npc",
+        "perspective_id": "harvey_cole",
+        "entity_ids": ["protagonist", "harvey_cole"]
+      },
+      "expected_selected_ids": ["mem_gift_harvey", "mem_rel_harvey"]
+    },
+    {
+      "case_id": "temporal-earliest-player-location",
+      "ability": "temporal_recall",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "player",
+        "perspective_id": "protagonist",
+        "entity_ids": ["protagonist"],
+        "event_types": ["character.moved"],
+        "time_mode": "earliest",
+        "limit": 1
+      },
+      "expected_selected_ids": ["mem_move_kitchen"]
+    },
+    {
+      "case_id": "temporal-latest-player-location",
+      "ability": "temporal_recall",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "player",
+        "perspective_id": "protagonist",
+        "entity_ids": ["protagonist"],
+        "event_types": ["character.moved"],
+        "time_mode": "latest",
+        "limit": 1
+      },
+      "expected_selected_ids": ["mem_move_hall"]
+    },
+    {
+      "case_id": "temporal-strictly-before-return",
+      "ability": "temporal_recall",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "player",
+        "perspective_id": "protagonist",
+        "entity_ids": ["protagonist"],
+        "event_types": ["character.moved"],
+        "time_mode": "before",
+        "time_start": 20
+      },
+      "expected_selected_ids": ["mem_move_kitchen"]
+    },
+    {
+      "case_id": "temporal-strictly-after-first-move",
+      "ability": "temporal_recall",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "player",
+        "perspective_id": "protagonist",
+        "entity_ids": ["protagonist"],
+        "event_types": ["character.moved"],
+        "time_mode": "after",
+        "time_start": 10
+      },
+      "expected_selected_ids": ["mem_move_hall"]
+    },
+    {
+      "case_id": "temporal-between-includes-both-boundaries",
+      "ability": "temporal_recall",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "player",
+        "perspective_id": "protagonist",
+        "entity_ids": ["protagonist"],
+        "event_types": ["character.moved"],
+        "time_mode": "between",
+        "time_start": 10,
+        "time_end": 20
+      },
+      "expected_selected_ids": ["mem_move_hall", "mem_move_kitchen"]
+    },
+    {
+      "case_id": "update-link-new-location-to-old-location",
+      "ability": "knowledge_update",
+      "operation": "link",
+      "expected_link": {
+        "source_memory_id": "mem_move_hall",
+        "target_memory_id": "mem_move_kitchen",
+        "relation_type": "updates",
+        "source_event_id": "evt_move_hall"
+      }
+    },
+    {
+      "case_id": "causal-link-harvey-relation-to-gift",
+      "ability": "causal_link",
+      "operation": "link",
+      "expected_link": {
+        "source_memory_id": "mem_rel_harvey",
+        "target_memory_id": "mem_gift_harvey",
+        "relation_type": "caused_by",
+        "source_event_id": "evt_rel_harvey"
+      }
+    },
+    {
+      "case_id": "current-location-routes-to-projection",
+      "ability": "current_state_routing",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "player",
+        "perspective_id": "protagonist",
+        "information_need": "current",
+        "entity_ids": ["protagonist"],
+        "event_types": ["character.moved"],
+        "time_mode": "latest",
+        "limit": 1
+      },
+      "expected_selected_ids": [],
+      "expected_route": "current_state_required"
+    },
+    {
+      "case_id": "abstain-unknown-character",
+      "ability": "abstention",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "player",
+        "perspective_id": "protagonist",
+        "entity_ids": ["unknown_character"]
+      },
+      "expected_selected_ids": []
+    },
+    {
+      "case_id": "abstain-unseen-crime",
+      "ability": "abstention",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "player",
+        "perspective_id": "protagonist",
+        "event_types": ["crime.committed"]
+      },
+      "expected_selected_ids": []
+    },
+    {
+      "case_id": "scope-player-cannot-see-harvey-private-relation",
+      "ability": "npc_scope",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "player",
+        "perspective_id": "protagonist",
+        "entity_ids": ["protagonist", "harvey_cole"],
+        "event_types": ["relationship.changed"]
+      },
+      "expected_selected_ids": [],
+      "forbidden_selected_ids": ["mem_rel_harvey"]
+    },
+    {
+      "case_id": "scope-martha-cannot-see-harvey-private-relation",
+      "ability": "npc_scope",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "npc",
+        "perspective_id": "martha_bell",
+        "entity_ids": ["protagonist", "harvey_cole"],
+        "event_types": ["relationship.changed"]
+      },
+      "expected_selected_ids": [],
+      "forbidden_selected_ids": ["mem_rel_harvey"]
+    },
+    {
+      "case_id": "scope-harvey-cannot-see-martha-private-relation",
+      "ability": "npc_scope",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "npc",
+        "perspective_id": "harvey_cole",
+        "entity_ids": ["protagonist", "martha_bell"],
+        "event_types": ["relationship.changed"]
+      },
+      "expected_selected_ids": [],
+      "forbidden_selected_ids": ["mem_rel_martha"]
+    },
+    {
+      "case_id": "exact-entity-prevents-other-npc-gift",
+      "ability": "exact_entity_match",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "player",
+        "perspective_id": "protagonist",
+        "entity_ids": ["protagonist", "harvey_cole"],
+        "event_types": ["gift.accepted"]
+      },
+      "expected_selected_ids": ["mem_gift_harvey"],
+      "forbidden_selected_ids": ["mem_gift_martha"]
+    },
+    {
+      "case_id": "exact-item-recalls-single-interaction",
+      "ability": "exact_entity_match",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "player",
+        "perspective_id": "protagonist",
+        "entity_ids": ["protagonist_cheap_jewelry_box"],
+        "event_types": ["gift.accepted"]
+      },
+      "expected_selected_ids": ["mem_gift_martha"]
+    },
+    {
+      "case_id": "scope-collector-only-sees-own-bribe",
+      "ability": "npc_scope",
+      "operation": "retrieve",
+      "query": {
+        "perspective_kind": "npc",
+        "perspective_id": "iron_hook_collector_one",
+        "entity_ids": ["protagonist", "iron_hook_collector_one"],
+        "event_types": ["bribe.rejected"]
+      },
+      "expected_selected_ids": ["mem_bribe_collector"],
+      "forbidden_selected_ids": ["mem_gift_harvey", "mem_gift_martha"]
+    },
+    {
+      "case_id": "factual-player-remembers-martha-gift",
+      "ability": "factual_recall",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist", "martha_bell"], "event_types": ["gift.accepted"], "search_text": "廉价首饰盒"},
+      "expected_selected_ids": ["mem_gift_martha"]
+    },
+    {
+      "case_id": "factual-player-remembers-rejected-bribe",
+      "ability": "factual_recall",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist", "iron_hook_collector_one"], "event_types": ["bribe.rejected"], "search_text": "没有接受"},
+      "expected_selected_ids": ["mem_bribe_collector"]
+    },
+    {
+      "case_id": "factual-player-all-accepted-gifts",
+      "ability": "factual_recall",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist"], "event_types": ["gift.accepted"]},
+      "expected_selected_ids": ["mem_gift_martha", "mem_gift_harvey"]
+    },
+    {
+      "case_id": "factual-player-all-item-interactions",
+      "ability": "factual_recall",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist"], "event_types": ["gift.accepted", "bribe.rejected"]},
+      "expected_selected_ids": ["mem_bribe_collector", "mem_gift_martha", "mem_gift_harvey"]
+    },
+    {
+      "case_id": "factual-martha-sees-own-context",
+      "ability": "factual_recall",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "npc", "perspective_id": "martha_bell", "entity_ids": ["protagonist", "martha_bell"]},
+      "expected_selected_ids": ["mem_gift_martha", "mem_rel_martha"]
+    },
+    {
+      "case_id": "factual-harvey-private-relation-only",
+      "ability": "factual_recall",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "npc", "perspective_id": "harvey_cole", "entity_ids": ["protagonist", "harvey_cole"], "event_types": ["relationship.changed"]},
+      "expected_selected_ids": ["mem_rel_harvey"]
+    },
+    {
+      "case_id": "temporal-between-first-move-only",
+      "ability": "temporal_recall",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist"], "event_types": ["character.moved"], "time_mode": "between", "time_start": 10, "time_end": 10, "search_text": "移动到了白鹭屋厨房"},
+      "expected_selected_ids": ["mem_move_kitchen"]
+    },
+    {
+      "case_id": "temporal-between-second-move-only",
+      "ability": "temporal_recall",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist"], "event_types": ["character.moved"], "time_mode": "between", "time_start": 20, "time_end": 20},
+      "expected_selected_ids": ["mem_move_hall"]
+    },
+    {
+      "case_id": "temporal-before-twenty-one",
+      "ability": "temporal_recall",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist"], "event_types": ["character.moved"], "time_mode": "before", "time_start": 21},
+      "expected_selected_ids": ["mem_move_hall", "mem_move_kitchen"]
+    },
+    {
+      "case_id": "temporal-after-zero",
+      "ability": "temporal_recall",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist"], "event_types": ["character.moved"], "time_mode": "after", "time_start": 0},
+      "expected_selected_ids": ["mem_move_hall", "mem_move_kitchen"]
+    },
+    {
+      "case_id": "temporal-after-last-move-abstains",
+      "ability": "abstention",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist"], "event_types": ["character.moved"], "time_mode": "after", "time_start": 20},
+      "expected_selected_ids": []
+    },
+    {
+      "case_id": "temporal-before-first-move-abstains",
+      "ability": "abstention",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist"], "event_types": ["character.moved"], "time_mode": "before", "time_start": 10},
+      "expected_selected_ids": []
+    },
+    {
+      "case_id": "temporal-between-gap-abstains",
+      "ability": "abstention",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist"], "event_types": ["character.moved"], "time_mode": "between", "time_start": 11, "time_end": 19},
+      "expected_selected_ids": []
+    },
+    {
+      "case_id": "temporal-earliest-two-moves",
+      "ability": "temporal_recall",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist"], "event_types": ["character.moved"], "time_mode": "earliest", "limit": 2},
+      "expected_selected_ids": ["mem_move_kitchen", "mem_move_hall"]
+    },
+    {
+      "case_id": "temporal-latest-two-moves",
+      "ability": "temporal_recall",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist"], "event_types": ["character.moved"], "time_mode": "latest", "limit": 2},
+      "expected_selected_ids": ["mem_move_hall", "mem_move_kitchen"]
+    },
+    {
+      "case_id": "current-harvey-relation-routes-to-projection",
+      "ability": "current_state_routing",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "npc", "perspective_id": "harvey_cole", "information_need": "current", "entity_ids": ["protagonist", "harvey_cole"], "event_types": ["relationship.changed"]},
+      "expected_selected_ids": [],
+      "expected_route": "current_state_required"
+    },
+    {
+      "case_id": "current-item-owner-routes-to-projection",
+      "ability": "current_state_routing",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "information_need": "current", "entity_ids": ["protagonist_small_knife"], "event_types": ["gift.accepted", "bribe.rejected"]},
+      "expected_selected_ids": [],
+      "expected_route": "current_state_required"
+    },
+    {
+      "case_id": "current-bribe-status-routes-to-projection",
+      "ability": "current_state_routing",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "npc", "perspective_id": "iron_hook_collector_one", "information_need": "current", "entity_ids": ["protagonist", "iron_hook_collector_one"]},
+      "expected_selected_ids": [],
+      "expected_route": "current_state_required"
+    },
+    {
+      "case_id": "abstain-unknown-item",
+      "ability": "abstention",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["nonexistent_ring"]},
+      "expected_selected_ids": []
+    },
+    {
+      "case_id": "abstain-unknown-event-type",
+      "ability": "abstention",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "event_types": ["promise.fulfilled"]},
+      "expected_selected_ids": []
+    },
+    {
+      "case_id": "abstain-wrong-location-entity",
+      "ability": "abstention",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["red_mill_tavern"], "event_types": ["character.moved"]},
+      "expected_selected_ids": []
+    },
+    {
+      "case_id": "scope-player-cannot-see-martha-private-relation",
+      "ability": "npc_scope",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist", "martha_bell"], "event_types": ["relationship.changed"]},
+      "expected_selected_ids": [],
+      "forbidden_selected_ids": ["mem_rel_martha"]
+    },
+    {
+      "case_id": "scope-collector-cannot-see-harvey-relation",
+      "ability": "npc_scope",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "npc", "perspective_id": "iron_hook_collector_one", "entity_ids": ["protagonist", "harvey_cole"], "event_types": ["relationship.changed"]},
+      "expected_selected_ids": [],
+      "forbidden_selected_ids": ["mem_rel_harvey"]
+    },
+    {
+      "case_id": "scope-martha-cannot-see-harvey-gift",
+      "ability": "npc_scope",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "npc", "perspective_id": "martha_bell", "entity_ids": ["protagonist", "harvey_cole"], "event_types": ["gift.accepted"]},
+      "expected_selected_ids": [],
+      "forbidden_selected_ids": ["mem_gift_harvey"]
+    },
+    {
+      "case_id": "scope-harvey-cannot-see-martha-gift",
+      "ability": "npc_scope",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "npc", "perspective_id": "harvey_cole", "entity_ids": ["protagonist", "martha_bell"], "event_types": ["gift.accepted"]},
+      "expected_selected_ids": [],
+      "forbidden_selected_ids": ["mem_gift_martha"]
+    },
+    {
+      "case_id": "scope-collector-cannot-see-accepted-gifts",
+      "ability": "npc_scope",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "npc", "perspective_id": "iron_hook_collector_one", "entity_ids": ["protagonist"], "event_types": ["gift.accepted"]},
+      "expected_selected_ids": [],
+      "forbidden_selected_ids": ["mem_gift_harvey", "mem_gift_martha"]
+    },
+    {
+      "case_id": "exact-harvey-small-knife-gift",
+      "ability": "exact_entity_match",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["harvey_cole", "protagonist_small_knife"], "event_types": ["gift.accepted"], "search_text": "哈维收过一件刀具", "semantic_rewrite": true},
+      "expected_selected_ids": ["mem_gift_harvey"]
+    },
+    {
+      "case_id": "exact-small-knife-bribe-rejection",
+      "ability": "exact_entity_match",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["iron_hook_collector_one", "protagonist_small_knife"], "event_types": ["bribe.rejected"], "search_text": "打手没被刀具买通", "semantic_rewrite": true},
+      "expected_selected_ids": ["mem_bribe_collector"]
+    },
+    {
+      "case_id": "exact-kitchen-participates-in-both-moves",
+      "ability": "exact_entity_match",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist", "white_heron_kitchen"], "event_types": ["character.moved"], "search_text": "艾拉进出做饭的房间", "semantic_rewrite": true},
+      "expected_selected_ids": ["mem_move_hall", "mem_move_kitchen"]
+    },
+    {
+      "case_id": "causal-link-martha-relation-to-gift",
+      "ability": "causal_link",
+      "operation": "link",
+      "expected_link": {"source_memory_id": "mem_rel_martha", "target_memory_id": "mem_gift_martha", "relation_type": "caused_by", "source_event_id": "evt_rel_martha"}
+    },
+    {
+      "case_id": "causal-link-harvey-remains-source-backed",
+      "ability": "causal_link",
+      "operation": "link",
+      "expected_link": {"source_memory_id": "mem_rel_harvey", "target_memory_id": "mem_gift_harvey", "relation_type": "caused_by", "source_event_id": "evt_rel_harvey"}
+    },
+    {
+      "case_id": "update-link-preserves-old-location-history",
+      "ability": "knowledge_update",
+      "operation": "link",
+      "expected_link": {"source_memory_id": "mem_move_hall", "target_memory_id": "mem_move_kitchen", "relation_type": "updates", "source_event_id": "evt_move_hall"}
+    },
+    {
+      "case_id": "semantic-rewrite-martha-present",
+      "ability": "factual_recall",
+      "operation": "retrieve",
+      "query": {"perspective_kind": "player", "perspective_id": "protagonist", "entity_ids": ["protagonist", "martha_bell"], "event_types": ["gift.accepted"], "search_text": "老板接受过我的礼物", "semantic_rewrite": true},
+      "expected_selected_ids": ["mem_gift_martha"]
+    }
+  ]
+}

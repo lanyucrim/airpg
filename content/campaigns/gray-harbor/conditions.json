@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "id": "cellar_tunnel_entrance_exposed",
+      "name": "地窖积水暴露旧排水通道入口",
+      "initiallyActive": false,
+      "visibility": "gm"
+    }
+  ]
+}

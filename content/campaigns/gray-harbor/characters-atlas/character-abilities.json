@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "catalog": [
+    {
+      "abilityId": "financial_accounting",
+      "name": "账务与记账",
+      "domain": "finance",
+      "description": "记录、核对和解释日常账目。"
+    },
+    {
+      "abilityId": "financial_audit",
+      "name": "审计与合规",
+      "domain": "finance",
+      "description": "检查账目、流程和合规风险。"
+    },
+    {
+      "abilityId": "credit_risk_assessment",
+      "name": "信贷与风险评估",
+      "domain": "finance",
+      "description": "评估借贷、抵押和违约风险。"
+    },
+    {
+      "abilityId": "trade_commerce",
+      "name": "商贸经营",
+      "domain": "commerce",
+      "description": "进行买卖、市场判断和商业经营。"
+    },
+    {
+      "abilityId": "negotiation",
+      "name": "谈判",
+      "domain": "social",
+      "description": "在利益冲突中交换条件并达成安排。"
+    },
+    {
+      "abilityId": "mediation_arbitration",
+      "name": "调解与仲裁",
+      "domain": "social",
+      "description": "处理争端并提出可执行的折中方案。"
+    },
+    {
+      "abilityId": "contract_drafting",
+      "name": "合同与文书起草",
+      "domain": "law",
+      "description": "起草、审阅和处理正式合同文书。"
+    },
+    {
+      "abilityId": "legal_reasoning",
+      "name": "法律分析",
+      "domain": "law",
+      "description": "解释法律规则、证据和程序后果。"
+    },
+    {
+      "abilityId": "organization_management",
+      "name": "组织管理",
+      "domain": "leadership",
+      "description": "安排人员、流程、资源和日常职责。"
+    },
+    {
+      "abilityId": "leadership_mobilization",
+      "name": "领导与动员",
+      "domain": "leadership",
+      "description": "组织成员采取一致行动并承担责任。"
+    },
+    {
+      "abilityId": "procurement_logistics",
+      "name": "采购与物流",
+      "domain": "operations",
+      "description": "采购、储运和分配物资。"
+    },
+    {
+      "abilityId": "cargo_port_operations",
+      "name": "码头与货运作业",
+      "domain": "operations",
+      "description": "处理码头、货栈和装卸流程。"
+    },
+    {
+      "abilityId": "information_gathering",
+      "name": "信息搜集",
+      "domain": "intelligence",
+      "description": "从人物、地点和公开渠道获取信息。"
+    },
+    {
+      "abilityId": "rumor_verification",
+      "name": "传闻核验",
+      "domain": "intelligence",
+      "description": "比较来源并判断传闻的可靠程度。"
+    },
+    {
+      "abilityId": "surveillance_tracking",
+      "name": "跟踪与监视",
+      "domain": "intelligence",
+      "description": "持续观察、跟踪或记录目标动向。"
+    },
+    {
+      "abilityId": "journalism_reporting",
+      "name": "新闻采写",
+      "domain": "communication",
+      "description": "采访、核实并编写新闻报道。"
+    },
+    {
+      "abilityId": "archival_research",
+      "name": "档案研究",
+      "domain": "research",
+      "description": "检索、整理和解释历史档案。"
+    },
+    {
+      "abilityId": "persuasion_oratory",
+      "name": "说服与演说",
+      "domain": "communication",
+      "description": "通过表达、论证和演说影响他人。"
+    },
+    {
+      "abilityId": "political_strategy",
+      "name": "政治策略",
+      "domain": "politics",
+      "description": "在制度、派系和舆论之间安排策略。"
+    },
+    {
+      "abilityId": "social_etiquette",
+      "name": "社交礼仪",
+      "domain": "social",
+      "description": "在正式或复杂社交场合维持分寸。"
+    },
+    {
+      "abilityId": "intimidation_enforcement",
+      "name": "街头威慑与执行",
+      "domain": "security",
+      "description": "以威慑、催收或强制执行达成目的。"
+    },
+    {
+      "abilityId": "deception_cover_identity",
+      "name": "欺骗与掩护身份",
+      "domain": "intelligence",
+      "description": "隐藏意图、编造说法或维持掩护身份。"
+    },
+    {
+      "abilityId": "forgery_document_handling",
+      "name": "文书伪造与处理",
+      "domain": "law",
+      "description": "处理、辨认或制作具有法律效力的文书。"
+    },
+    {
+      "abilityId": "teaching_mentoring",
+      "name": "教学与指导",
+      "domain": "education",
+      "description": "传授知识、训练技能或指导新人。"
+    },
+    {
+      "abilityId": "translation_interpreting",
+      "name": "翻译与口译",
+      "domain": "communication",
+      "description": "在语言之间准确传达信息。"
+    },
+    {
+      "abilityId": "policing_investigation",
+      "name": "警务与调查",
+      "domain": "law",
+      "description": "依法调查、取证和处理治安事务。"
+    },
+    {
+      "abilityId": "customs_inspection",
+      "name": "海关查验",
+      "domain": "law",
+      "description": "检查货物、申报和进出港手续。"
+    },
+    {
+      "abilityId": "civic_administration",
+      "name": "市政与许可行政",
+      "domain": "administration",
+      "description": "处理登记、许可证和公共行政流程。"
+    },
+    {
+      "abilityId": "clinical_medicine",
+      "name": "临床医疗",
+      "domain": "medicine",
+      "description": "诊断、治疗和判断临床风险。"
+    },
+    {
+      "abilityId": "nursing_care",
+      "name": "护理与照护",
+      "domain": "medicine",
+      "description": "提供持续护理、照护和康复协助。"
+    },
+    {
+      "abilityId": "first_aid_trauma",
+      "name": "急救与创伤处理",
+      "domain": "medicine",
+      "description": "在紧急情况下稳定伤情并施行急救。"
+    },
+    {
+      "abilityId": "pharmacy_herbalism",
+      "name": "药剂与草药",
+      "domain": "medicine",
+      "description": "配制、识别和使用药剂或草药。"
+    },
+    {
+      "abilityId": "mortuary_practice",
+      "name": "殡仪事务",
+      "domain": "care",
+      "description": "处理遗体、葬仪和相关手续。"
+    },
+    {
+      "abilityId": "religious_ritual",
+      "name": "宗教仪式",
+      "domain": "religion",
+      "description": "主持或解释宗教仪式与教务。"
+    },
+    {
+      "abilityId": "seamanship_navigation",
+      "name": "航海与导航",
+      "domain": "maritime",
+      "description": "操作船只、判断航向和处理海上事务。"
+    },
+    {
+      "abilityId": "railway_dispatch",
+      "name": "铁路调度",
+      "domain": "transport",
+      "description": "安排列车、线路和货运时刻。"
+    },
+    {
+      "abilityId": "mechanical_repair",
+      "name": "机械维修",
+      "domain": "technical",
+      "description": "诊断、维护和修理机械设备。"
+    },
+    {
+      "abilityId": "engineering_infrastructure",
+      "name": "工程与基础设施",
+      "domain": "technical",
+      "description": "设计或维护建筑、管线和公共设施。"
+    },
+    {
+      "abilityId": "industrial_quality_safety",
+      "name": "工业质检与安全",
+      "domain": "technical",
+      "description": "检查生产质量、危险和作业安全。"
+    },
+    {
+      "abilityId": "firefighting_rescue",
+      "name": "消防与救援",
+      "domain": "emergency",
+      "description": "处理火灾、救援和现场安全。"
+    },
+    {
+      "abilityId": "printing_press",
+      "name": "印刷与制版",
+      "domain": "craft",
+      "description": "操作印刷、制版和小型出版流程。"
+    },
+    {
+      "abilityId": "tailoring_costume",
+      "name": "裁缝与服装",
+      "domain": "craft",
+      "description": "裁剪、缝制和维护服装。"
+    },
+    {
+      "abilityId": "cooking_food_preparation",
+      "name": "烹饪与食物准备",
+      "domain": "service",
+      "description": "准备食物、安排厨房和控制卫生。"
+    },
+    {
+      "abilityId": "hospitality_bartending",
+      "name": "待客与酒水服务",
+      "domain": "service",
+      "description": "接待客人、调酒和处理服务现场。"
+    },
+    {
+      "abilityId": "music_performance",
+      "name": "音乐表演",
+      "domain": "arts",
+      "description": "演奏、演唱或组织音乐表演。"
+    },
+    {
+      "abilityId": "visual_art_design",
+      "name": "视觉艺术与设计",
+      "domain": "arts",
+      "description": "进行绘画、视觉表达或设计工作。"
+    },
+    {
+      "abilityId": "photography",
+      "name": "摄影",
+      "domain": "arts",
+      "description": "操作摄影设备并记录可用影像。"
+    },
+    {
+      "abilityId": "hairdressing_grooming",
+      "name": "理发与仪容",
+      "domain": "service",
+      "description": "理发、修饰和维护仪容。"
+    },
+    {
+      "abilityId": "unarmed_combat",
+      "name": "徒手格斗",
+      "domain": "security",
+      "description": "在明确训练或经历基础上进行徒手搏斗。"
+    },
+    {
+      "abilityId": "weapons_firearms",
+      "name": "武器与枪械",
+      "domain": "security",
+      "description": "在明确训练或职责基础上使用武器。"
+    },
+    {
+      "abilityId": "stealth_lock_security",
+      "name": "潜行与锁具安保",
+      "domain": "security",
+      "description": "进行隐蔽行动、锁具处理或安保防护。"
+    },
+    {
+      "abilityId": "carriage_driving",
+      "name": "马车与驾驶",
+      "domain": "transport",
+      "description": "驾驶、调度和维护出租马车。"
+    },
+    {
+      "abilityId": "athletics_boxing",
+      "name": "体能与拳赛",
+      "domain": "security",
+      "description": "进行拳赛、体能训练或高强度体力活动。"
+    }
+  ]
+}

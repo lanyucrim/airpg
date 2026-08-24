@@ -1,0 +1,50 @@
+{
+  "inspections": [
+    {
+      "id": "inspect_iron_hooks_final_notice",
+      "label": "查看铁钩帮最后通牒",
+      "suggestedPrompt": "我查看铁钩帮最后通牒。",
+      "targetItemId": "iron_hooks_final_notice",
+      "aliases": ["铁钩帮最后通牒", "最后通牒", "通知", "那张纸"],
+      "accessPolicy": "location",
+      "requiredActorKnowledgeFactIds": [],
+      "revealedFactIds": ["final_notice_terms"],
+      "clueIds": [],
+      "timeMinutes": 2,
+      "revealText": "纸上的字很短：自本函送达之日起七日内支付第一期欠款；逾期未付，债权方将接管抵押财产及经营收益。落款只有“S.C.”。你读到的只有通知本身，它没有说明缩写是谁，也没有证明债务数字正确。",
+      "repeatText": "你已经读过这份最后通牒；纸面没有出现新的内容。"
+    },
+    {
+      "id": "inspect_white_heron_operating_ledger",
+      "label": "核对白鹭屋营业账本",
+      "suggestedPrompt": "我查看白鹭屋营业账本，核对债务数字。",
+      "targetItemId": "white_heron_operating_ledger",
+      "aliases": ["白鹭屋营业账本", "白鹭屋账本", "营业账本", "账本", "账册"],
+      "accessPolicy": "location",
+      "requiredActorKnowledgeFactIds": [],
+      "revealedFactIds": ["white_heron_debt_inflated"],
+      "clueIds": ["debt_total_anomaly"],
+      "timeMinutes": 15,
+      "revealText": "你把营业收入、日常亏损和已经记录的还款逐项对照。白鹭屋的经营确实在亏损，但即使算上利息与延期费用，也撑不起最后通牒所暗示的总债务。你确认了数字异常；这次核对没有自动指出异常的来源或责任人。",
+      "repeatText": "这本账你已经核对过；现有记录仍只能证明债务数字异常，不能凭空指出幕后人物。"
+    }
+  ],
+  "inquiries": [
+    {
+      "id": "ask_martha_about_debt",
+      "label": "向玛莎询问债务",
+      "suggestedPrompt": "我询问玛莎：这笔债务到底是怎么来的？",
+      "targetCharacterId": "martha_bell",
+      "topic": "white_heron_debt_origin",
+      "aliases": ["债务", "欠款", "借款", "欠债", "最后通牒"],
+      "requiredActorKnowledgeFactIds": [],
+      "requiredNpcKnowledgeFactIds": ["martha_borrowed_for_sister", "martha_disputes_notice_total"],
+      "revealedFactIds": ["martha_borrowed_for_sister", "martha_disputes_notice_total"],
+      "clueIds": [],
+      "timeMinutes": 5,
+      "responseText": "玛莎把桌上的纸压平，承认三年前为了给重病的妹妹治病向铁钩帮借过钱，妹妹最后还是去世了。她也承认债没有还清，但坚持最后通牒上的总额不是她认可的数字。她没有指出数字异常的来源，也没有替你完成后续调查。",
+      "repeatText": "玛莎已经把她当前愿意说明的债务来历告诉了你；继续重复同一个问题不会产生新的事实。",
+      "unknownText": "玛莎没有给出可以确认的答案。系统不会因为你提出问题，就替她补上并不知道的内容。"
+    }
+  ]
+}

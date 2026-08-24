@@ -1,0 +1,16 @@
+{
+  "obligations": [
+    {
+      "id": "white_heron_debt",
+      "title": "白鹭屋债务",
+      "kind": "debt",
+      "debtorId": "white_heron_house",
+      "creditorId": "iron_hooks",
+      "status": "active",
+      "terms": "铁钩帮要求白鹭屋在七日内支付第一期欠款，否则接管抵押财产及经营收益；债务总额本身存在争议。",
+      "dueClockId": "white_heron_seven_day_deadline",
+      "evidenceFactIds": ["white_heron_debt_exists", "white_heron_debt_inflated", "jenny_forged_additional_loan"],
+      "visibility": "player"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "locations": [
+    {
+      "id": "gray_harbor",
+      "name": "灰港",
+      "kind": "city",
+      "description": "一座被海雾、工业、资本与地下秩序共同塑造的港口城市。"
+    },
+    {
+      "id": "oak_street",
+      "name": "栎木街",
+      "kind": "street",
+      "parentId": "gray_harbor",
+      "description": "不算最危险，也不算最体面的街道，适合成为第一块可治理的地盘。",
+      "exits": [
+        {"id": "oak_to_white_heron", "toLocationId": "white_heron_ground_floor", "label": "进入白鹭屋", "travelMinutes": 1}
+      ]
+    },
+    {
+      "id": "white_heron_house",
+      "name": "白鹭屋",
+      "kind": "building",
+      "parentId": "oak_street",
+      "description": "栎木街17号，一家正在衰落的中低档妓院。"
+    },
+    {
+      "id": "white_heron_ground_floor",
+      "name": "白鹭屋一楼大厅",
+      "aliases": ["一楼", "大厅", "前厅"],
+      "kind": "room",
+      "parentId": "white_heron_house",
+      "description": "兼作前厅、酒吧和接待处。雨夜里，哈维在这里送达最后通牒。",
+      "exits": [
+        {"id": "white_heron_to_oak", "toLocationId": "oak_street", "label": "推门走上栎木街", "travelMinutes": 1},
+        {"id": "ground_to_kitchen", "toLocationId": "white_heron_kitchen", "label": "走进厨房", "travelMinutes": 1},
+        {"id": "ground_to_second_floor", "toLocationId": "white_heron_second_floor", "label": "上二楼", "travelMinutes": 1},
+        {"id": "ground_to_backyard", "toLocationId": "white_heron_backyard", "label": "从后门进入院子", "travelMinutes": 1}
+      ]
+    },
+    {
+      "id": "white_heron_kitchen",
+      "name": "白鹭屋厨房",
+      "aliases": ["厨房"],
+      "kind": "room",
+      "parentId": "white_heron_house",
+      "exits": [
+        {"id": "kitchen_to_ground", "toLocationId": "white_heron_ground_floor", "label": "回到大厅", "travelMinutes": 1},
+        {"id": "kitchen_to_cellar", "toLocationId": "white_heron_cellar", "label": "下到地窖", "travelMinutes": 1}
+      ]
+    },
+    {
+      "id": "white_heron_second_floor",
+      "name": "白鹭屋二楼",
+      "aliases": ["二楼"],
+      "kind": "floor",
+      "parentId": "white_heron_house",
+      "description": "六间接待客人的房间。",
+      "exits": [
+        {"id": "second_floor_to_ground", "toLocationId": "white_heron_ground_floor", "label": "下楼", "travelMinutes": 1},
+        {"id": "second_to_third_floor", "toLocationId": "white_heron_third_floor", "label": "上三楼", "travelMinutes": 1}
+      ]
+    },
+    {
+      "id": "white_heron_third_floor",
+      "name": "白鹭屋三楼住处",
+      "aliases": ["三楼", "住处", "房间"],
+      "kind": "floor",
+      "parentId": "white_heron_house",
+      "description": "员工住处，主角与莉亚在这里合住一间房。",
+      "exits": [
+        {"id": "third_to_second_floor", "toLocationId": "white_heron_second_floor", "label": "下二楼", "travelMinutes": 1}
+      ]
+    },
+    {
+      "id": "white_heron_cellar",
+      "name": "白鹭屋地窖",
+      "aliases": ["地窖", "地下室"],
+      "kind": "room",
+      "parentId": "white_heron_house",
+      "description": "酒水储藏地；一条尚未公开的旧排水通道通往隔壁废弃面包房。",
+      "exits": [
+        {"id": "cellar_to_kitchen", "toLocationId": "white_heron_kitchen", "label": "回到厨房", "travelMinutes": 1},
+        {"id": "cellar_tunnel_to_bakery", "toLocationId": "abandoned_bakery", "label": "穿过隐蔽排水通道", "travelMinutes": 4, "visible": false, "discoveryId": "cellar_drainage_tunnel"}
+      ]
+    },
+    {
+      "id": "white_heron_backyard",
+      "name": "白鹭屋后院",
+      "aliases": ["后院"],
+      "kind": "yard",
+      "parentId": "white_heron_house",
+      "exits": [
+        {"id": "backyard_to_ground", "toLocationId": "white_heron_ground_floor", "label": "从后门回大厅", "travelMinutes": 1},
+        {"id": "backyard_to_oak", "toLocationId": "oak_street", "label": "绕回栎木街", "travelMinutes": 2}
+      ]
+    },
+    {
+      "id": "abandoned_bakery",
+      "name": "栎木街15号废弃面包房",
+      "aliases": ["废弃面包房", "面包房"],
+      "kind": "building",
+      "parentId": "oak_street",
+      "description": "停业已久的旧面包房。",
+      "exits": [
+        {"id": "bakery_to_oak", "toLocationId": "oak_street", "label": "回到栎木街", "travelMinutes": 1},
+        {"id": "bakery_tunnel_to_cellar", "toLocationId": "white_heron_cellar", "label": "穿过隐蔽排水通道", "travelMinutes": 4, "visible": false, "discoveryId": "cellar_drainage_tunnel"}
+      ]
+    },
+    {
+      "id": "red_mill_tavern",
+      "name": "红磨坊酒馆",
+      "aliases": ["红磨坊", "酒馆"],
+      "kind": "building",
+      "parentId": "gray_harbor",
+      "description": "帕迪·杜恩经营的酒馆，后院旧马厩常被用于重要谈判。",
+      "exits": []
+    }
+  ]
+}

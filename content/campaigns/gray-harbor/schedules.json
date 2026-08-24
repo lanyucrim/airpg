@@ -1,0 +1,9 @@
+{
+  "schedules": [
+    {"id": "otis_kitchen_daily", "characterId": "otis_finn", "weekday": 0, "startMinute": 0, "endMinute": 1440, "locationId": "white_heron_kitchen", "availability": "public", "priority": 10},
+    {"id": "martha_front_daily", "characterId": "martha_bell", "weekday": 0, "startMinute": 0, "endMinute": 1440, "locationId": "white_heron_ground_floor", "availability": "public", "priority": 10},
+    {"id": "jenny_front_daily", "characterId": "jenny_bell", "weekday": 0, "startMinute": 0, "endMinute": 1440, "locationId": "white_heron_ground_floor", "availability": "public", "priority": 10},
+    {"id": "ada_accounts_monday", "characterId": "ada_quinn", "weekday": 0, "startMinute": 480, "endMinute": 780, "locationId": "white_heron_second_floor", "availability": "appointment", "priority": 20},
+    {"id": "lia_private_sunday", "characterId": "lia_moran", "weekday": 6, "startMinute": 600, "endMinute": 960, "locationId": "white_heron_third_floor", "availability": "private", "priority": 20}
+  ]
+}

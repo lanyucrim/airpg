@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 5,
+  "systemId": "gray-harbor-kingdom-crown",
+  "status": "canon_denominations_with_runtime_holding_policy",
+  "sourceStatus": "canon",
+  "canonBase": "正文第 6.1 节明确写出王国克朗体系、四级面额、固定兑换比例、整数记账和现金物品边界。",
+  "sourceRefs": [
+    {
+      "file": "灰港_黑潮王座_V4.2_AI_GM主线状态机与支线条件版.md",
+      "title": "6.1｜货币体系与货币作为物品",
+      "status": "canon",
+      "lineStart": 10626,
+      "lineEnd": 10667
+    }
+  ],
+  "runtimeHoldingPolicy": {
+    "sourceStatus": "user_confirmed_design",
+    "sourceRef": "docs/development.md",
+    "summary": "玩家可用货币只以自有容器中的实体钱币实例表示，不设置独立数值余额；交易系统暂缓。"
+  },
+  "baseUnit": {
+    "id": "kron",
+    "itemDefinitionId": "currency_kron",
+    "name": "克朗",
+    "level": 1,
+    "valueInCrowns": 1,
+    "ratioToNext": 1000,
+    "sourceStatus": "canon"
+  },
+  "denominations": [
+    {
+      "id": "kron",
+      "itemDefinitionId": "currency_kron",
+      "name": "克朗",
+      "level": 1,
+      "valueInCrowns": 1,
+      "ratioFromLower": null,
+      "sourceStatus": "canon",
+      "circulationRole": "日常小额支付"
+    },
+    {
+      "id": "silver_shield",
+      "itemDefinitionId": "currency_silver_shield",
+      "name": "银盾",
+      "level": 2,
+      "valueInCrowns": 1000,
+      "ratioFromLower": "1000:1",
+      "sourceStatus": "canon",
+      "circulationRole": "大额日常与商贸结算"
+    },
+    {
+      "id": "gold_crown",
+      "itemDefinitionId": "currency_gold_crown",
+      "name": "金冠",
+      "level": 3,
+      "valueInCrowns": 1000000,
+      "ratioFromLower": "1000:1",
+      "sourceStatus": "canon",
+      "circulationRole": "资产、房产和机构结算"
+    },
+    {
+      "id": "royal_treasury_note",
+      "itemDefinitionId": "currency_royal_treasury_note",
+      "name": "王库券",
+      "aliases": [
+        "王券"
+      ],
+      "level": 4,
+      "valueInCrowns": 1000000000,
+      "ratioFromLower": "1000:1",
+      "sourceStatus": "canon",
+      "circulationRole": "王国、银行和跨港口级清算"
+    }
+  ],
+  "conversionRule": "1 银盾 = 1,000 克朗；1 金冠 = 1,000 银盾；1 王库券 = 1,000 金冠。",
+  "ratioPolicy": {
+    "direction": "higher_denomination_to_lower",
+    "ratio": "1000:1",
+    "baseUnitIsSmallest": true,
+    "integerAccountingUnit": "克朗",
+    "noFloatingPoint": true
+  },
+  "circulationBoundary": {
+    "dailyCurrency": [
+      "kron"
+    ],
+    "commercialCurrency": [
+      "silver_shield"
+    ],
+    "institutionalSettlement": [
+      "gold_crown"
+    ],
+    "kingdomSettlement": [
+      "royal_treasury_note"
+    ],
+    "note": "高面额单位不应默认作为普通居民零钱。"
+  },
+  "itemPolicy": {
+    "physicalCurrencyIsItem": true,
+    "currencyCategory": "currency",
+    "currencyIsStackable": true,
+    "playerHoldingPolicy": "physical_item_instances_in_owned_containers",
+    "numericPlayerBalanceSupported": false,
+    "transactionSystemStatus": "deferred",
+    "definitionIdentityField": "definitionId",
+    "unitValueField": "valueCrown",
+    "valueField": "valueCrown",
+    "quantityMeaning": "同一面额货币单位的数量",
+    "totalValueFormula": "quantity * valueCrown",
+    "stackMergeKey": "definitionId + condition + containerId/locationId + properties",
+    "note": "玩家可用货币只由其自有容器中的实体钱币实例构成；definitionId 区分面额，valueCrown 表示单枚或单张价值，总值由程序派生。当前不定义账户余额、支付、找零或交易流程。"
+  }
+}

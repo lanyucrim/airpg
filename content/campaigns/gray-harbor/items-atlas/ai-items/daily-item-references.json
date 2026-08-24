@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "tableId": "gray_harbor_daily_item_references",
+  "currencyUnit": "crown",
+  "benchmarkItemKey": "apple_medium_each",
+  "references": [
+    {
+      "itemKey": "apple_medium_each",
+      "name": "苹果",
+      "aliases": [
+        "apple",
+        "中等苹果"
+      ],
+      "unitDescription": "一个中等大小、完整可购买的苹果",
+      "estimatedRetailUsd": 0.8,
+      "priceRatioToApple": 1,
+      "valueCrown": 10,
+      "unitWeightGrams": 180,
+      "sourceStatus": "user_benchmark",
+      "confidence": 1.0,
+      "assumptions": [
+        "10 克朗是用户指定的固定游戏购买力基准",
+        "美元价仅用于后续物品的相对价格换算"
+      ],
+      "modelAudit": null
+    },
+    {
+      "itemKey": "banana_medium_each",
+      "name": "香蕉",
+      "aliases": [
+        "banana",
+        "中等香蕉"
+      ],
+      "unitDescription": "一根中等大小、带皮的完整香蕉",
+      "estimatedRetailUsd": 0.3,
+      "priceRatioToApple": 0.375,
+      "valueCrown": 4,
+      "unitWeightGrams": 150,
+      "sourceStatus": "reviewed_estimate",
+      "confidence": 0.8,
+      "assumptions": [
+        "按普通零售单根香蕉估算而非按磅或按串计价",
+        "重量包含果皮，因为它随商品一同购买和携带"
+      ],
+      "modelAudit": null
+    }
+  ]
+}

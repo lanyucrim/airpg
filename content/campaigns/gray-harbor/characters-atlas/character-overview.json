@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "atlasId": "gray-harbor-character-atlas",
+  "source": {
+    "scenarioId": "gray-harbor-black-tide-throne",
+    "sourceVersion": "4.2",
+    "sourceDocument": "灰港_黑潮王座_V4.2_AI_GM主线状态机与支线条件版.md",
+    "catalogFile": "v4.2-catalog.json"
+  },
+  "catalogCharacterCount": 139,
+  "totalCharacterRecords": 142,
+  "runtimeCharacterCount": 142,
+  "supplementalRuntimeCharacterCount": 2,
+  "playerCharacterId": "protagonist",
+  "backgroundTemplateCount": 9,
+  "files": [
+    "character-profiles.json",
+    "character-states.json",
+    "character-inventories.json",
+    "relationship-atlas.json",
+    "character-routines.json",
+    "background-character-templates.json",
+    "character-abilities.json"
+  ],
+  "abilityCatalogVersion": 1,
+  "abilityCatalogCount": 53,
+  "policies": {
+    "canonStatuses": [
+      "canon",
+      "inferred",
+      "unknown",
+      "template"
+    ],
+    "affinityScale": "-100..100",
+    "aiRoutine": true,
+    "plotOverrides": true,
+    "runtimeCodeChanged": true
+  }
+}

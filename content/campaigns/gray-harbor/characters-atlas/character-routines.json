@@ -1,0 +1,2245 @@
+{
+  "schemaVersion": 2,
+  "routines": [
+    {
+      "id": "routine_protagonist",
+      "characterId": "protagonist",
+      "routineNarrative": "玩家角色行动由玩家决定；AI 只能提出环境和 NPC 候选，不能替玩家决定行动。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P001",
+      "characterId": "P001",
+      "routineNarrative": "上午十点后起床，午前看账，下午采购或拜访同行，傍晚检查前厅，午夜后清点现金。债务压力越高，她越频繁亲自守在柜台。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [
+        {
+          "activity": "现有日程中的候选活动地点",
+          "locationIds": [
+            "loc_5_1_1__1"
+          ],
+          "timeWindows": [
+            {
+              "startMinute": 0,
+              "endMinute": 1440
+            }
+          ],
+          "purpose": "runtime_schedule_seed",
+          "companions": [],
+          "triggers": [],
+          "avoidConditions": [],
+          "likelihood": "medium",
+          "visibility": "public",
+          "variability": "high",
+          "sourceScheduleId": "martha_front_daily",
+          "isFixed": false
+        }
+      ],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P002",
+      "characterId": "P002",
+      "routineNarrative": "午后醒来后会去街边买咖啡，习惯绕路看三家熟店；晚上工作时最喜欢在前厅而非房间，因为能听见更多谈话；凌晨偶尔去地下牌局。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [
+        {
+          "activity": "现有日程中的候选活动地点",
+          "locationIds": [
+            "loc_5_1_1__4"
+          ],
+          "timeWindows": [
+            {
+              "startMinute": 600,
+              "endMinute": 960
+            }
+          ],
+          "purpose": "runtime_schedule_seed",
+          "companions": [],
+          "triggers": [],
+          "avoidConditions": [],
+          "likelihood": "medium",
+          "visibility": "private",
+          "variability": "high",
+          "sourceScheduleId": "lia_private_sunday",
+          "isFixed": false
+        }
+      ],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P003",
+      "characterId": "P003",
+      "routineNarrative": "上午是白鹭屋少数真正早起的人之一。每周固定一天核账，每个月最后一天情绪最差。外出时会顺便观察银行公告和商店价格。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [
+        {
+          "activity": "现有日程中的候选活动地点",
+          "locationIds": [
+            "loc_5_1_1__3"
+          ],
+          "timeWindows": [
+            {
+              "startMinute": 480,
+              "endMinute": 780
+            }
+          ],
+          "purpose": "runtime_schedule_seed",
+          "companions": [],
+          "triggers": [],
+          "avoidConditions": [],
+          "likelihood": "medium",
+          "visibility": "appointment",
+          "variability": "high",
+          "sourceScheduleId": "ada_accounts_monday",
+          "isFixed": false
+        }
+      ],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P004",
+      "characterId": "P004",
+      "routineNarrative": "下午开始整理前厅和酒柜，深夜最后锁门。她总能知道谁什么时候回来，因此是非常好的“内部异常观察者”。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [
+        {
+          "activity": "现有日程中的候选活动地点",
+          "locationIds": [
+            "loc_5_1_1__1"
+          ],
+          "timeWindows": [
+            {
+              "startMinute": 0,
+              "endMinute": 1440
+            }
+          ],
+          "purpose": "runtime_schedule_seed",
+          "companions": [],
+          "triggers": [],
+          "avoidConditions": [],
+          "likelihood": "medium",
+          "visibility": "public",
+          "variability": "high",
+          "sourceScheduleId": "jenny_front_daily",
+          "isFixed": false
+        }
+      ],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P005",
+      "characterId": "P005",
+      "routineNarrative": "每周固定两个下午消失一小时交情报；从不走同一条路线连续三次。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P006",
+      "characterId": "P006",
+      "routineNarrative": "清晨采购，是白鹭屋最早出门的人；午后会睡一小时；晚上最忙。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [
+        {
+          "activity": "现有日程中的候选活动地点",
+          "locationIds": [
+            "loc_5_1_1__2"
+          ],
+          "timeWindows": [
+            {
+              "startMinute": 0,
+              "endMinute": 1440
+            }
+          ],
+          "purpose": "runtime_schedule_seed",
+          "companions": [],
+          "triggers": [],
+          "avoidConditions": [],
+          "likelihood": "medium",
+          "visibility": "public",
+          "variability": "high",
+          "sourceScheduleId": "otis_kitchen_daily",
+          "isFixed": false
+        }
+      ],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P007",
+      "characterId": "P007",
+      "routineNarrative": "上午处理账和员工请求，下午会在不同茶馆见同行，晚上只在蓝铃馆最忙时出现。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P008",
+      "characterId": "P008",
+      "routineNarrative": "每天只见三到五个人，下午四点固定喝茶；从不在同一个地点连续两次讨论同一件高风险事情。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P009",
+      "characterId": "P009",
+      "routineNarrative": "上午很少出现，下午在铁钩酒馆见头目，晚上随机巡街维持“老大仍然看得见”的形象。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P010",
+      "characterId": "P010",
+      "routineNarrative": "白天处理账，晚上不固定出现；每周四会独自去一间不起眼咖啡馆做私人账。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P011",
+      "characterId": "P011",
+      "routineNarrative": "下午在酒馆，夜里带人收账；每周会匿名去听蕾娜唱歌。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P012",
+      "characterId": "P012",
+      "routineNarrative": "上午合法公司，下午与码头中层碰面，晚上很少出现在犯罪现场。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P013",
+      "characterId": "P013",
+      "routineNarrative": "大量时间在咖啡馆和办公室之间移动，几乎不进赌场。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P014",
+      "characterId": "P014",
+      "routineNarrative": "清晨到工会大厅，午后走码头，晚间处理家庭求助。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P015",
+      "characterId": "P015",
+      "routineNarrative": "白天工会办公室，晚上夜校或政治会议。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P016",
+      "characterId": "P016",
+      "routineNarrative": "上午慈善基金，下午秘密看公司文件，晚上参加社交活动。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P017",
+      "characterId": "P017",
+      "routineNarrative": "早七点到办公室，午餐常在会议桌解决，晚上极少出席无商业意义的聚会。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P018",
+      "characterId": "P018",
+      "routineNarrative": "清晨看版样，上午见编辑，下午见权贵和广告客户，重大新闻夜里亲自坐编辑部。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P019",
+      "characterId": "P019",
+      "routineNarrative": "早到警署，午后外勤，晚上整理笔记；重大案会连续工作到凌晨。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P020",
+      "characterId": "P020",
+      "routineNarrative": "早五点起，固定锻炼，七点读卷宗；几乎不参加无议程宴会。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P021",
+      "characterId": "P021",
+      "routineNarrative": "日程极规律，每周只留一晚无会议。不会随意出现在街头。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P022",
+      "characterId": "P022",
+      "routineNarrative": "标准公司作息，但危机时通宵。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P023",
+      "characterId": "P023",
+      "routineNarrative": "早晨训练，白天巡检各产业安全，晚上只在重大行动出现。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P024",
+      "characterId": "P024",
+      "routineNarrative": "白天办公室，夜里常有秘密会面。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P025",
+      "characterId": "P025",
+      "routineNarrative": "没有固定日程，这是刻意的。每周更换至少两处会面点。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P026",
+      "characterId": "P026",
+      "routineNarrative": "从早餐会到晚宴几乎整天见人。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P027",
+      "characterId": "P027",
+      "routineNarrative": "白天总部、晚上大量社交。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P028",
+      "characterId": "P028",
+      "routineNarrative": "身体允许时每天进公司。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P029",
+      "characterId": "P029",
+      "routineNarrative": "标准公司高管。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P030",
+      "characterId": "P030",
+      "routineNarrative": "日夜颠倒。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P031",
+      "characterId": "P031",
+      "routineNarrative": "规律。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P032",
+      "characterId": "P032",
+      "routineNarrative": "会期和选区之间奔波。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P033",
+      "characterId": "P033",
+      "routineNarrative": "白天工地和市政厅。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P034",
+      "characterId": "P034",
+      "routineNarrative": "规律事务所生活。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P035",
+      "characterId": "P035",
+      "routineNarrative": "看船期变化。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P036",
+      "characterId": "P036",
+      "routineNarrative": "随船期。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P037",
+      "characterId": "P037",
+      "routineNarrative": "药房。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P038",
+      "characterId": "P038",
+      "routineNarrative": "早班码头。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P039",
+      "characterId": "P039",
+      "routineNarrative": "任务期间极严密。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P040",
+      "characterId": "P040",
+      "routineNarrative": "正常商人作息。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P041",
+      "characterId": "P041",
+      "routineNarrative": "夜生活多。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P042",
+      "characterId": "P042",
+      "routineNarrative": "码头。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P043",
+      "characterId": "P043",
+      "routineNarrative": "夜间演出。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P044",
+      "characterId": "P044",
+      "routineNarrative": "署里。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P045",
+      "characterId": "P045",
+      "routineNarrative": "轮班。这意味着玩家若主动寻找此人，GM应先根据时间、危机和当前关系判断其是否在常规地点，而不是默认‘找到了’。",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "canon"
+    },
+    {
+      "id": "routine_P046",
+      "characterId": "P046",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P047",
+      "characterId": "P047",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P048",
+      "characterId": "P048",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P049",
+      "characterId": "P049",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P050",
+      "characterId": "P050",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P051",
+      "characterId": "P051",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P052",
+      "characterId": "P052",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P053",
+      "characterId": "P053",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P054",
+      "characterId": "P054",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P055",
+      "characterId": "P055",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P056",
+      "characterId": "P056",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P057",
+      "characterId": "P057",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P058",
+      "characterId": "P058",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P059",
+      "characterId": "P059",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P060",
+      "characterId": "P060",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P061",
+      "characterId": "P061",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P062",
+      "characterId": "P062",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P063",
+      "characterId": "P063",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P064",
+      "characterId": "P064",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P065",
+      "characterId": "P065",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P066",
+      "characterId": "P066",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P067",
+      "characterId": "P067",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P068",
+      "characterId": "P068",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P069",
+      "characterId": "P069",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P070",
+      "characterId": "P070",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P071",
+      "characterId": "P071",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P072",
+      "characterId": "P072",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P073",
+      "characterId": "P073",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P074",
+      "characterId": "P074",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P075",
+      "characterId": "P075",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P076",
+      "characterId": "P076",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P077",
+      "characterId": "P077",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P078",
+      "characterId": "P078",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P079",
+      "characterId": "P079",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P080",
+      "characterId": "P080",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P081",
+      "characterId": "P081",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P082",
+      "characterId": "P082",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P083",
+      "characterId": "P083",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P084",
+      "characterId": "P084",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P085",
+      "characterId": "P085",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P086",
+      "characterId": "P086",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P087",
+      "characterId": "P087",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P088",
+      "characterId": "P088",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P089",
+      "characterId": "P089",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P090",
+      "characterId": "P090",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P091",
+      "characterId": "P091",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P092",
+      "characterId": "P092",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P093",
+      "characterId": "P093",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P094",
+      "characterId": "P094",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P095",
+      "characterId": "P095",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P096",
+      "characterId": "P096",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P097",
+      "characterId": "P097",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P098",
+      "characterId": "P098",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P099",
+      "characterId": "P099",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P100",
+      "characterId": "P100",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P101",
+      "characterId": "P101",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P102",
+      "characterId": "P102",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P103",
+      "characterId": "P103",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P104",
+      "characterId": "P104",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P105",
+      "characterId": "P105",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P106",
+      "characterId": "P106",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P107",
+      "characterId": "P107",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P108",
+      "characterId": "P108",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P109",
+      "characterId": "P109",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P110",
+      "characterId": "P110",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P111",
+      "characterId": "P111",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P112",
+      "characterId": "P112",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P113",
+      "characterId": "P113",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P114",
+      "characterId": "P114",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P115",
+      "characterId": "P115",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P116",
+      "characterId": "P116",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P117",
+      "characterId": "P117",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P118",
+      "characterId": "P118",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P119",
+      "characterId": "P119",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P120",
+      "characterId": "P120",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P121",
+      "characterId": "P121",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P122",
+      "characterId": "P122",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P123",
+      "characterId": "P123",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P124",
+      "characterId": "P124",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P125",
+      "characterId": "P125",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P126",
+      "characterId": "P126",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P127",
+      "characterId": "P127",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P128",
+      "characterId": "P128",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P129",
+      "characterId": "P129",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P130",
+      "characterId": "P130",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P131",
+      "characterId": "P131",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P132",
+      "characterId": "P132",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P133",
+      "characterId": "P133",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P134",
+      "characterId": "P134",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P135",
+      "characterId": "P135",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P136",
+      "characterId": "P136",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P137",
+      "characterId": "P137",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P138",
+      "characterId": "P138",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_P139",
+      "characterId": "P139",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_iron_hook_collector_one",
+      "characterId": "iron_hook_collector_one",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    },
+    {
+      "id": "routine_iron_hook_collector_two",
+      "characterId": "iron_hook_collector_two",
+      "routineNarrative": "",
+      "candidateActivities": [],
+      "routineConstraints": {
+        "aiDriven": true,
+        "programValidationOnly": true,
+        "mustUseAtlasTravelTime": true,
+        "noTeleportation": true,
+        "ordinaryActionsCannotAdvanceMajorPlot": true
+      },
+      "plotOverrideSlots": [],
+      "sourceStatus": "unknown"
+    }
+  ]
+}

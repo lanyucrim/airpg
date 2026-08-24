@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 3,
+  "atlasFile": "items-atlas/important-items.json",
+  "instances": [
+    {
+      "id": "protagonist_small_knife",
+      "definitionId": "small_personal_knife",
+      "name": "小刀",
+      "description": "剧本未说明该物品的外形、材质与尺寸。",
+      "category": "tool",
+      "isPlotItem": false,
+      "quantity": 1,
+      "stackable": false,
+      "unitWeightGrams": null,
+      "valueCrown": null,
+      "condition": "intact",
+      "durability": {
+        "current": 85.0,
+        "max": 100.0
+      },
+      "containerId": "protagonist_equipment",
+      "locationId": null,
+      "properties": {
+        "equipment": {
+          "mode": "held",
+          "slotIds": [
+            "left_hand",
+            "right_hand"
+          ],
+          "handCount": 1
+        }
+      }
+    },
+    {
+      "id": "protagonist_cheap_jewelry_box",
+      "definitionId": "cheap_jewelry_box",
+      "name": "廉价首饰盒",
+      "description": "剧本未说明该物品的外形、材质与尺寸。",
+      "category": "personal_property",
+      "isPlotItem": false,
+      "quantity": 1,
+      "stackable": false,
+      "unitWeightGrams": null,
+      "valueCrown": null,
+      "condition": "intact",
+      "durability": null,
+      "containerId": "shared_third_floor_room",
+      "locationId": null,
+      "properties": {}
+    },
+    {
+      "id": "iron_hooks_final_notice",
+      "definitionId": "debt_final_notice",
+      "name": "铁钩帮最后通牒",
+      "description": "剧本未说明该物品的外形、材质与尺寸。",
+      "category": "document",
+      "isPlotItem": true,
+      "quantity": 1,
+      "stackable": false,
+      "unitWeightGrams": null,
+      "valueCrown": null,
+      "condition": "intact",
+      "durability": null,
+      "containerId": "white_heron_front_table",
+      "locationId": null,
+      "properties": {}
+    },
+    {
+      "id": "white_heron_operating_ledger",
+      "definitionId": "business_operating_ledger",
+      "name": "白鹭屋营业账本",
+      "description": "剧本未说明该物品的外形、材质与尺寸。",
+      "category": "document",
+      "isPlotItem": true,
+      "quantity": 1,
+      "stackable": false,
+      "unitWeightGrams": null,
+      "valueCrown": null,
+      "condition": "intact",
+      "durability": null,
+      "containerId": "white_heron_records",
+      "locationId": null,
+      "properties": {}
+    },
+    {
+      "id": "white_heron_kitchen_bread",
+      "definitionId": "kitchen_bread_loaf",
+      "name": "半条黑麦面包",
+      "description": "剧本未说明该物品的外形、材质与尺寸。",
+      "category": "food",
+      "isPlotItem": false,
+      "quantity": 1,
+      "stackable": true,
+      "unitWeightGrams": null,
+      "valueCrown": null,
+      "condition": "intact",
+      "durability": null,
+      "containerId": "white_heron_kitchen_pantry",
+      "locationId": null,
+      "properties": {
+        "consumable": {
+          "schemaVersion": 1,
+          "quantityPerUse": 1,
+          "method": "eat",
+          "targetKinds": [
+            "character"
+          ],
+          "riskClass": "low",
+          "effectCandidates": [
+            {
+              "domain": "characters",
+              "effectKind": "nourishment",
+              "summary": "作为普通食物缓解饥饿",
+              "magnitude": "minor",
+              "durationMinutes": null,
+              "requiresDomainResolution": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "white_heron_kitchen_stew",
+      "definitionId": "kitchen_stew_pot",
+      "name": "一锅还温着的杂菜炖汤",
+      "description": "剧本未说明该物品的外形、材质与尺寸。",
+      "category": "food",
+      "isPlotItem": false,
+      "quantity": 1,
+      "stackable": true,
+      "unitWeightGrams": null,
+      "valueCrown": null,
+      "condition": "intact",
+      "durability": null,
+      "containerId": "white_heron_kitchen_pantry",
+      "locationId": null,
+      "properties": {
+        "consumable": {
+          "schemaVersion": 1,
+          "quantityPerUse": 1,
+          "method": "eat",
+          "targetKinds": [
+            "character"
+          ],
+          "riskClass": "low",
+          "effectCandidates": [
+            {
+              "domain": "characters",
+              "effectKind": "nourishment",
+              "summary": "作为普通食物缓解饥饿",
+              "magnitude": "minor",
+              "durationMinutes": null,
+              "requiresDomainResolution": true
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

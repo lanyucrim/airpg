@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "catalogId": "gray_harbor_generated_daily_items",
+  "itemContract": {
+    "schemaVersion": 7,
+    "fields": [
+      "id",
+      "definitionId",
+      "name",
+      "description",
+      "category",
+      "isPlotItem",
+      "quantity",
+      "stackable",
+      "unitWeightGrams",
+      "valueCrown",
+      "condition",
+      "durability",
+      "containerId",
+      "locationId",
+      "properties"
+    ],
+    "fingerprint": "sha256:b457e2cf70752aeb0819dda734c145d5ee3765e323afa1c50fa3ed2932986cab",
+    "generationPolicyFingerprint": "sha256:6a410cc59d7c2e6f14a11f15c81ab32a273c1ca7557f1351a34f0e16c0a4b874"
+  },
+  "knownDefinitionAliases": {},
+  "definitions": []
+}

@@ -1,0 +1,13 @@
+{
+  "clocks": [
+    {
+      "id": "white_heron_seven_day_deadline",
+      "name": "白鹭屋最后期限",
+      "startsAt": 0,
+      "deadlineAt": 10080,
+      "status": "active",
+      "visibility": "player",
+      "stakes": "期限届满时，铁钩帮会要求钱、房契或可被他们控制的其他价值。"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "relationships": [
+    {"subjectId": "martha_bell", "objectId": "protagonist", "favor": 2, "trust": 2, "fear": 1},
+    {"subjectId": "lia_moran", "objectId": "protagonist", "favor": 3, "trust": 3, "suspicion": 1},
+    {"subjectId": "ada_quinn", "objectId": "protagonist", "trust": 0, "respect": 0, "suspicion": 2},
+    {"subjectId": "jenny_bell", "objectId": "protagonist", "favor": 0, "trust": 0, "suspicion": 2},
+    {"subjectId": "harvey_cole", "objectId": "protagonist", "favor": 0, "trust": 0, "fear": 0, "respect": 0}
+  ]
+}

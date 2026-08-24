@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "profileId": "gray_harbor_era_technology",
+  "campaignId": "gray-harbor",
+  "analoguePeriod": "现实十九世纪末至二十世纪初之间",
+  "sourceStatus": "canon",
+  "sourceRefs": [
+    {
+      "path": "灰港_黑潮王座_V4.2_AI_GM主线状态机与支线条件版.md",
+      "section": "8.3 技术水平",
+      "lines": "530-543"
+    }
+  ],
+  "technologies": [
+    {
+      "technologyId": "manual_craft",
+      "name": "普通手工加工",
+      "status": "common",
+      "sourceStatus": "inferred_constraint",
+      "basis": "时代类比下的普通切割、捆扎、缝制、木工和简单混合作为基础手工能力，不代表人物自动具备技能或工具。"
+    },
+    {
+      "technologyId": "steamships",
+      "name": "蒸汽船",
+      "status": "mature",
+      "sourceStatus": "canon",
+      "basis": "原文明确蒸汽船已经成熟。"
+    },
+    {
+      "technologyId": "railways",
+      "name": "铁路",
+      "status": "mature",
+      "sourceStatus": "canon",
+      "basis": "原文明确铁路已经成熟。"
+    },
+    {
+      "technologyId": "telegraph",
+      "name": "电报",
+      "status": "common",
+      "sourceStatus": "canon",
+      "basis": "原文明确电报已经普及。"
+    },
+    {
+      "technologyId": "telephone",
+      "name": "电话",
+      "status": "emerging",
+      "sourceStatus": "canon",
+      "basis": "原文明确电话刚进入富裕机构，不能当成普通家庭普及品。"
+    },
+    {
+      "technologyId": "photography",
+      "name": "摄影",
+      "status": "common",
+      "sourceStatus": "canon",
+      "basis": "原文明确摄影已经用于报纸和警务。"
+    },
+    {
+      "technologyId": "revolvers",
+      "name": "左轮手枪",
+      "status": "common",
+      "sourceStatus": "canon",
+      "basis": "原文明确左轮手枪常见。"
+    },
+    {
+      "technologyId": "bolt_action_rifles",
+      "name": "栓动步枪",
+      "status": "common",
+      "sourceStatus": "canon",
+      "basis": "原文明确栓动步枪常见。"
+    },
+    {
+      "technologyId": "automatic_weapons",
+      "name": "自动武器",
+      "status": "limited",
+      "sourceStatus": "canon",
+      "basis": "原文明确自动武器极为昂贵且受到严控。"
+    },
+    {
+      "technologyId": "typewriters_and_carbon_paper",
+      "name": "打字机与复写纸",
+      "status": "common",
+      "sourceStatus": "canon",
+      "basis": "原文明确打字机和复写纸已经影响账本与文书副本。"
+    },
+    {
+      "technologyId": "modern_banking",
+      "name": "现代银行",
+      "status": "common",
+      "sourceStatus": "canon",
+      "basis": "原文明确现代银行已形成重要社会作用。"
+    },
+    {
+      "technologyId": "early_forensic_records",
+      "name": "早期指纹、照片与警务档案",
+      "status": "emerging",
+      "sourceStatus": "canon",
+      "basis": "原文明确新式警务开始积累档案、指纹和照片。"
+    },
+    {
+      "technologyId": "digital_electronics",
+      "name": "数字电子技术",
+      "status": "unavailable",
+      "sourceStatus": "inferred_constraint",
+      "basis": "依据已确认的时代类比默认排除，除非后续 Canon 资料另有明确说明。"
+    },
+    {
+      "technologyId": "modern_synthetic_polymers",
+      "name": "现代合成塑料",
+      "status": "unavailable",
+      "sourceStatus": "inferred_constraint",
+      "basis": "依据已确认的时代类比默认排除，不能用于普通配方产物。"
+    },
+    {
+      "technologyId": "nuclear_technology",
+      "name": "核技术",
+      "status": "unavailable",
+      "sourceStatus": "inferred_constraint",
+      "basis": "依据已确认的时代类比默认排除。"
+    },
+    {
+      "technologyId": "supernatural_materials",
+      "name": "超自然材料与魔法制造",
+      "status": "unavailable",
+      "sourceStatus": "inferred_constraint",
+      "basis": "灰港当前物品生成只接受普通现实日常物品，不能用配方凭空引入超自然事实。"
+    }
+  ],
+  "assessmentRules": [
+    "只能使用当前输入中确实存在的物品种类和数量，不得补充未声明材料。",
+    "普通自动配方产物必须符合时代技术边界；limited 技术不自动等于普通可制作。",
+    "不得生成剧情道具、货币、证件、证据、权限凭证、超自然物品或现代技术产物。",
+    "不确定是否可行时应拒绝或要求澄清，不能用低置信度候选通过。",
+    "配方只判断材料到普通产物的物理合理性，不确认人物技能、工具、时间、地点安全或物品来源。"
+  ]
+}

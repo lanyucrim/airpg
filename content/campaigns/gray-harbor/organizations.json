@@ -1,0 +1,27 @@
+{
+  "organizations": [
+    {
+      "id": "white_heron_house",
+      "name": "白鹭屋",
+      "type": "business",
+      "headquartersLocationId": "white_heron_house",
+      "leaderCharacterIds": ["martha_bell"],
+      "memberCharacterIds": ["martha_bell", "jenny_bell", "otis_finn", "lia_moran", "ada_quinn", "protagonist"],
+      "publicDescription": "栎木街17号，一家正在债务中挣扎的中低档妓院。",
+      "privateGoals": ["保住房产和经营权", "避免员工被债权方当成资产处置"],
+      "resourceTags": ["building", "staff_contacts", "customer_information"],
+      "policyTags": ["declining_business", "debt_pressure"]
+    },
+    {
+      "id": "iron_hooks",
+      "name": "铁钩帮",
+      "type": "criminal_faction",
+      "leaderCharacterIds": [],
+      "memberCharacterIds": ["harvey_cole", "iron_hook_collector_one", "iron_hook_collector_two"],
+      "publicDescription": "控制烛巷部分保护费、暴力和赌场生意的旧式街头帮派。",
+      "privateGoals": ["通过白鹭屋债务取得栎木街17号", "维持商户对其保护体系的依赖"],
+      "resourceTags": ["street_enforcers", "casinos", "seventh_precinct_contacts"],
+      "policyTags": ["old_gang_honor", "patriarchal", "protection_racket"]
+    }
+  ]
+}

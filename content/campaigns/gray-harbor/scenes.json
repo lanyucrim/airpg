@@ -1,0 +1,33 @@
+{
+  "scenes": [
+    {
+      "id": "scene_last_seven_days",
+      "locationId": "white_heron_ground_floor",
+      "phase": "social",
+      "title": "最后七天",
+      "objective": "让玩家理解债务压力并自由选择第一项行动；不能在一回合内替玩家完成调查或解决危机。",
+      "presentCharacterIds": ["protagonist", "martha_bell", "jenny_bell", "harvey_cole", "iron_hook_collector_one", "iron_hook_collector_two"],
+      "openingText": "秋雨刚停。哈维·科尔把一张纸放到白鹭屋的桌上，只说：七天。",
+      "narrativeGuidance": {
+        "premise": "七日债务期限已经开始。玩家需要在压力持续推进的同时，逐步理解债务、人物关系与白鹭屋的处境，并选择自己的解决策略。",
+        "hardAnchors": [
+          "白鹭屋确有尚未清偿的债务，铁钩帮已经送达七日最后期限。",
+          "玛莎认可真实债务存在，但债务总额的异常来源尚未被玩家确认。",
+          "危机不能因一次普通调查、一次谈话或一句玩家声明而直接解决。"
+        ],
+        "flexibleApproaches": [
+          "检查最后通牒、账本和其他实际存在且可以接触的证据。",
+          "询问在场人物，比较他们各自真正知道并愿意说出的内容。",
+          "探索白鹭屋、栎木街及合理可达的周边地点寻找替代线索。",
+          "尝试协商、交易、施压、欺骗、求助或建立新的合作关系。"
+        ],
+        "stopBefore": [
+          "在证据不足时确认债务异常的责任人或完整阴谋。",
+          "替玩家决定信任、背叛、承诺、违法或承担重大代价。",
+          "在没有确认事件时解决七日债务危机或改变白鹭屋归属。"
+        ]
+      },
+      "maxMajorBeatsPerTurn": 1
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "clues": [
+    {
+      "id": "debt_total_anomaly",
+      "factId": "white_heron_debt_inflated",
+      "title": "异常增加的债务总额",
+      "description": "即使计入延期和利息，白鹭屋的债务也不应增长到通知上的数字。",
+      "initiallyKnownBy": [],
+      "initiallyRevealed": false
+    },
+    {
+      "id": "forged_signature_tail",
+      "factId": "jenny_forged_additional_loan",
+      "title": "签名末笔的差异",
+      "description": "附加借款上的签名与玛莎真实签名在末笔存在细小差别。",
+      "initiallyKnownBy": [],
+      "initiallyRevealed": false
+    },
+    {
+      "id": "cellar_drainage_tunnel_entrance",
+      "factId": "cellar_tunnel_exists",
+      "title": "地窖里的旧排水通道",
+      "description": "积水冲开了遮挡物，露出一条通往栎木街15号废弃面包房地下室的旧排水通道。",
+      "initiallyKnownBy": ["martha_bell", "otis_finn"],
+      "initiallyRevealed": false
+    }
+  ]
+}

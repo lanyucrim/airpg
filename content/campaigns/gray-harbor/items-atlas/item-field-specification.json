@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 7,
+  "contractId": "gray-harbor-item-field-contract",
+  "status": "active",
+  "designRule": "物品记录只保存客观属性、直接位置状态和剧情道具布尔判断。",
+  "fields": [
+    "id",
+    "definitionId",
+    "name",
+    "description",
+    "category",
+    "isPlotItem",
+    "quantity",
+    "stackable",
+    "unitWeightGrams",
+    "valueCrown",
+    "condition",
+    "durability",
+    "containerId",
+    "locationId",
+    "properties"
+  ],
+  "fieldDefinitions": [
+    {"name": "id", "type": "string", "nullable": false, "meaning": "实例唯一 ID；定义表中表示定义 ID。"},
+    {"name": "definitionId", "type": "string", "nullable": false, "meaning": "物品种类 ID；定义记录与自身 id 相同，实例回指定义。"},
+    {"name": "name", "type": "string", "nullable": false, "meaning": "物品名称。"},
+    {"name": "description", "type": "string", "nullable": false, "meaning": "外形、材质和其他可观察特征。"},
+    {"name": "category", "type": "string", "nullable": false, "meaning": "物品大类。"},
+    {"name": "isPlotItem", "type": "boolean", "nullable": false, "meaning": "是否为剧情道具；不保存剧情内容。"},
+    {"name": "quantity", "type": "integer", "nullable": false, "minimum": 1, "meaning": "当前数量；不可堆叠物品固定为 1。"},
+    {"name": "stackable", "type": "boolean", "nullable": false, "meaning": "是否可与同定义且状态一致的物品合并。"},
+    {"name": "unitWeightGrams", "type": "integer", "nullable": true, "minimum": 0, "meaning": "单件重量，单位克；未知为 null。"},
+    {"name": "valueCrown", "type": "integer", "nullable": true, "minimum": 0, "meaning": "单件参考价值，单位克朗；尚未估值为 null。"},
+    {"name": "condition", "type": "string", "nullable": true, "meaning": "当前物理状态。"},
+    {"name": "durability", "type": "object", "nullable": true, "shape": {"current": "number(float)", "max": "number(float)"}, "meaning": "仅非消耗工具、服装和装备实例使用的耐久 current/max；其他物品及所有定义为 null。"},
+    {"name": "containerId", "type": "string", "nullable": true, "meaning": "直接所在容器 ID。"},
+    {"name": "locationId", "type": "string", "nullable": true, "meaning": "未放入容器时直接所在地点或结构 ID。"},
+    {"name": "properties", "type": "object", "nullable": false, "meaning": "类别专属客观属性；当前允许 volumeCm3、equipment、consumable，不得保存剧情、证据、控制、来源或审计信息。"}
+  ],
+  "collectionRules": {
+    "definition": "definitions 中 id 与 definitionId 相同，quantity=1，containerId=null，locationId=null。",
+    "instance": "instances 使用独立 id，并通过 definitionId 回指定义；非消耗工具、服装和装备必须有初始耐久。",
+    "definitionIsNotInstance": true
+  },
+  "derivedValues": {
+    "totalWeightGrams": "quantity * unitWeightGrams",
+    "totalValueCrown": "quantity * valueCrown"
+  },
+  "placementRule": "containerId 和 locationId 不能同时有值；容器中的物品通过容器推导地点。",
+  "stackMergeKey": ["definitionId", "condition", "durability", "containerId", "locationId", "properties"],
+  "currencyRule": {
+    "category": "currency",
+    "denominationIdentity": "definitionId",
+    "unitValueField": "valueCrown",
+    "quantityField": "quantity",
+    "totalValueFormula": "quantity * valueCrown",
+    "physicalCurrencyIsItem": true,
+    "accountBalanceIsItem": false
+  },
+  "excludedFromItemRecord": [
+    "剧情内容与剧情条件",
+    "证据意义与证明边界",
+    "所有权、控制权与机构承认",
+    "资料来源与原文行号",
+    "创建、转移和变更事件",
+    "交易许可、报价与成交价",
+    "玩家、GM 和角色可见性",
+    "法律效力与访问权限"
+  ]
+}

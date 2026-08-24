@@ -1,0 +1,2152 @@
+{
+  "schemaVersion": 3,
+  "itemAtlasRef": "../items-atlas/important-items.json",
+  "inventories": [
+    {
+      "id": "inventory_protagonist",
+      "characterId": "protagonist",
+      "containers": [
+        {
+          "id": "protagonist_inventory",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "canon"
+        },
+        {
+          "id": "protagonist_equipment",
+          "kind": "equipment",
+          "locationId": null,
+          "sourceStatus": "canon"
+        }
+      ],
+      "itemRefs": [
+        {
+          "instanceId": "protagonist_small_knife",
+          "definitionId": "small_personal_knife",
+          "containerId": "protagonist_equipment",
+          "source": {
+            "status": "canon",
+            "file": "items.json"
+          }
+        }
+      ],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P001",
+      "characterId": "P001",
+      "containers": [
+        {
+          "id": "inventory_martha_bell",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P002",
+      "characterId": "P002",
+      "containers": [
+        {
+          "id": "inventory_lia_moran",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P003",
+      "characterId": "P003",
+      "containers": [
+        {
+          "id": "inventory_ada_quinn",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P004",
+      "characterId": "P004",
+      "containers": [
+        {
+          "id": "inventory_jenny_bell",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P005",
+      "characterId": "P005",
+      "containers": [
+        {
+          "id": "inventory_catalog_p005",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P006",
+      "characterId": "P006",
+      "containers": [
+        {
+          "id": "inventory_otis_finn",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P007",
+      "characterId": "P007",
+      "containers": [
+        {
+          "id": "inventory_catalog_p007",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P008",
+      "characterId": "P008",
+      "containers": [
+        {
+          "id": "inventory_catalog_p008",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P009",
+      "characterId": "P009",
+      "containers": [
+        {
+          "id": "inventory_catalog_p009",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P010",
+      "characterId": "P010",
+      "containers": [
+        {
+          "id": "inventory_catalog_p010",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P011",
+      "characterId": "P011",
+      "containers": [
+        {
+          "id": "harvey_inventory",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "canon"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P012",
+      "characterId": "P012",
+      "containers": [
+        {
+          "id": "inventory_catalog_p012",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P013",
+      "characterId": "P013",
+      "containers": [
+        {
+          "id": "inventory_catalog_p013",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P014",
+      "characterId": "P014",
+      "containers": [
+        {
+          "id": "inventory_catalog_p014",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P015",
+      "characterId": "P015",
+      "containers": [
+        {
+          "id": "inventory_catalog_p015",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P016",
+      "characterId": "P016",
+      "containers": [
+        {
+          "id": "inventory_catalog_p016",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P017",
+      "characterId": "P017",
+      "containers": [
+        {
+          "id": "inventory_catalog_p017",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P018",
+      "characterId": "P018",
+      "containers": [
+        {
+          "id": "inventory_catalog_p018",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P019",
+      "characterId": "P019",
+      "containers": [
+        {
+          "id": "inventory_catalog_p019",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P020",
+      "characterId": "P020",
+      "containers": [
+        {
+          "id": "inventory_catalog_p020",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P021",
+      "characterId": "P021",
+      "containers": [
+        {
+          "id": "inventory_catalog_p021",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P022",
+      "characterId": "P022",
+      "containers": [
+        {
+          "id": "inventory_catalog_p022",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P023",
+      "characterId": "P023",
+      "containers": [
+        {
+          "id": "inventory_catalog_p023",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P024",
+      "characterId": "P024",
+      "containers": [
+        {
+          "id": "inventory_catalog_p024",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P025",
+      "characterId": "P025",
+      "containers": [
+        {
+          "id": "inventory_catalog_p025",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P026",
+      "characterId": "P026",
+      "containers": [
+        {
+          "id": "inventory_catalog_p026",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P027",
+      "characterId": "P027",
+      "containers": [
+        {
+          "id": "inventory_catalog_p027",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P028",
+      "characterId": "P028",
+      "containers": [
+        {
+          "id": "inventory_catalog_p028",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P029",
+      "characterId": "P029",
+      "containers": [
+        {
+          "id": "inventory_catalog_p029",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P030",
+      "characterId": "P030",
+      "containers": [
+        {
+          "id": "inventory_catalog_p030",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P031",
+      "characterId": "P031",
+      "containers": [
+        {
+          "id": "inventory_catalog_p031",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P032",
+      "characterId": "P032",
+      "containers": [
+        {
+          "id": "inventory_catalog_p032",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P033",
+      "characterId": "P033",
+      "containers": [
+        {
+          "id": "inventory_catalog_p033",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P034",
+      "characterId": "P034",
+      "containers": [
+        {
+          "id": "inventory_catalog_p034",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P035",
+      "characterId": "P035",
+      "containers": [
+        {
+          "id": "inventory_catalog_p035",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P036",
+      "characterId": "P036",
+      "containers": [
+        {
+          "id": "inventory_catalog_p036",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P037",
+      "characterId": "P037",
+      "containers": [
+        {
+          "id": "inventory_catalog_p037",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P038",
+      "characterId": "P038",
+      "containers": [
+        {
+          "id": "inventory_catalog_p038",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P039",
+      "characterId": "P039",
+      "containers": [
+        {
+          "id": "inventory_catalog_p039",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P040",
+      "characterId": "P040",
+      "containers": [
+        {
+          "id": "inventory_catalog_p040",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P041",
+      "characterId": "P041",
+      "containers": [
+        {
+          "id": "inventory_catalog_p041",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P042",
+      "characterId": "P042",
+      "containers": [
+        {
+          "id": "inventory_catalog_p042",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P043",
+      "characterId": "P043",
+      "containers": [
+        {
+          "id": "inventory_catalog_p043",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P044",
+      "characterId": "P044",
+      "containers": [
+        {
+          "id": "inventory_catalog_p044",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P045",
+      "characterId": "P045",
+      "containers": [
+        {
+          "id": "inventory_catalog_p045",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P046",
+      "characterId": "P046",
+      "containers": [
+        {
+          "id": "inventory_catalog_p046",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P047",
+      "characterId": "P047",
+      "containers": [
+        {
+          "id": "inventory_catalog_p047",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P048",
+      "characterId": "P048",
+      "containers": [
+        {
+          "id": "inventory_catalog_p048",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P049",
+      "characterId": "P049",
+      "containers": [
+        {
+          "id": "inventory_catalog_p049",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P050",
+      "characterId": "P050",
+      "containers": [
+        {
+          "id": "inventory_catalog_p050",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P051",
+      "characterId": "P051",
+      "containers": [
+        {
+          "id": "inventory_catalog_p051",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P052",
+      "characterId": "P052",
+      "containers": [
+        {
+          "id": "inventory_catalog_p052",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P053",
+      "characterId": "P053",
+      "containers": [
+        {
+          "id": "inventory_catalog_p053",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P054",
+      "characterId": "P054",
+      "containers": [
+        {
+          "id": "inventory_catalog_p054",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P055",
+      "characterId": "P055",
+      "containers": [
+        {
+          "id": "inventory_catalog_p055",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P056",
+      "characterId": "P056",
+      "containers": [
+        {
+          "id": "inventory_catalog_p056",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P057",
+      "characterId": "P057",
+      "containers": [
+        {
+          "id": "inventory_catalog_p057",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P058",
+      "characterId": "P058",
+      "containers": [
+        {
+          "id": "inventory_catalog_p058",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P059",
+      "characterId": "P059",
+      "containers": [
+        {
+          "id": "inventory_catalog_p059",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P060",
+      "characterId": "P060",
+      "containers": [
+        {
+          "id": "inventory_catalog_p060",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P061",
+      "characterId": "P061",
+      "containers": [
+        {
+          "id": "inventory_catalog_p061",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P062",
+      "characterId": "P062",
+      "containers": [
+        {
+          "id": "inventory_catalog_p062",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P063",
+      "characterId": "P063",
+      "containers": [
+        {
+          "id": "inventory_catalog_p063",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P064",
+      "characterId": "P064",
+      "containers": [
+        {
+          "id": "inventory_catalog_p064",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P065",
+      "characterId": "P065",
+      "containers": [
+        {
+          "id": "inventory_catalog_p065",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P066",
+      "characterId": "P066",
+      "containers": [
+        {
+          "id": "inventory_catalog_p066",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P067",
+      "characterId": "P067",
+      "containers": [
+        {
+          "id": "inventory_catalog_p067",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P068",
+      "characterId": "P068",
+      "containers": [
+        {
+          "id": "inventory_catalog_p068",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P069",
+      "characterId": "P069",
+      "containers": [
+        {
+          "id": "inventory_catalog_p069",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P070",
+      "characterId": "P070",
+      "containers": [
+        {
+          "id": "inventory_catalog_p070",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P071",
+      "characterId": "P071",
+      "containers": [
+        {
+          "id": "inventory_catalog_p071",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P072",
+      "characterId": "P072",
+      "containers": [
+        {
+          "id": "inventory_catalog_p072",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P073",
+      "characterId": "P073",
+      "containers": [
+        {
+          "id": "inventory_catalog_p073",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P074",
+      "characterId": "P074",
+      "containers": [
+        {
+          "id": "inventory_catalog_p074",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P075",
+      "characterId": "P075",
+      "containers": [
+        {
+          "id": "inventory_catalog_p075",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P076",
+      "characterId": "P076",
+      "containers": [
+        {
+          "id": "inventory_catalog_p076",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P077",
+      "characterId": "P077",
+      "containers": [
+        {
+          "id": "inventory_catalog_p077",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P078",
+      "characterId": "P078",
+      "containers": [
+        {
+          "id": "inventory_catalog_p078",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P079",
+      "characterId": "P079",
+      "containers": [
+        {
+          "id": "inventory_catalog_p079",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P080",
+      "characterId": "P080",
+      "containers": [
+        {
+          "id": "inventory_catalog_p080",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P081",
+      "characterId": "P081",
+      "containers": [
+        {
+          "id": "inventory_catalog_p081",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P082",
+      "characterId": "P082",
+      "containers": [
+        {
+          "id": "inventory_catalog_p082",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P083",
+      "characterId": "P083",
+      "containers": [
+        {
+          "id": "inventory_catalog_p083",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P084",
+      "characterId": "P084",
+      "containers": [
+        {
+          "id": "inventory_catalog_p084",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P085",
+      "characterId": "P085",
+      "containers": [
+        {
+          "id": "inventory_catalog_p085",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P086",
+      "characterId": "P086",
+      "containers": [
+        {
+          "id": "inventory_catalog_p086",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P087",
+      "characterId": "P087",
+      "containers": [
+        {
+          "id": "inventory_catalog_p087",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P088",
+      "characterId": "P088",
+      "containers": [
+        {
+          "id": "inventory_catalog_p088",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P089",
+      "characterId": "P089",
+      "containers": [
+        {
+          "id": "inventory_catalog_p089",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P090",
+      "characterId": "P090",
+      "containers": [
+        {
+          "id": "inventory_catalog_p090",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P091",
+      "characterId": "P091",
+      "containers": [
+        {
+          "id": "inventory_catalog_p091",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P092",
+      "characterId": "P092",
+      "containers": [
+        {
+          "id": "inventory_catalog_p092",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P093",
+      "characterId": "P093",
+      "containers": [
+        {
+          "id": "inventory_catalog_p093",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P094",
+      "characterId": "P094",
+      "containers": [
+        {
+          "id": "inventory_catalog_p094",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P095",
+      "characterId": "P095",
+      "containers": [
+        {
+          "id": "inventory_catalog_p095",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P096",
+      "characterId": "P096",
+      "containers": [
+        {
+          "id": "inventory_catalog_p096",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P097",
+      "characterId": "P097",
+      "containers": [
+        {
+          "id": "inventory_catalog_p097",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P098",
+      "characterId": "P098",
+      "containers": [
+        {
+          "id": "inventory_catalog_p098",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P099",
+      "characterId": "P099",
+      "containers": [
+        {
+          "id": "inventory_catalog_p099",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P100",
+      "characterId": "P100",
+      "containers": [
+        {
+          "id": "inventory_catalog_p100",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P101",
+      "characterId": "P101",
+      "containers": [
+        {
+          "id": "inventory_catalog_p101",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P102",
+      "characterId": "P102",
+      "containers": [
+        {
+          "id": "inventory_catalog_p102",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P103",
+      "characterId": "P103",
+      "containers": [
+        {
+          "id": "inventory_catalog_p103",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P104",
+      "characterId": "P104",
+      "containers": [
+        {
+          "id": "inventory_catalog_p104",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P105",
+      "characterId": "P105",
+      "containers": [
+        {
+          "id": "inventory_catalog_p105",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P106",
+      "characterId": "P106",
+      "containers": [
+        {
+          "id": "inventory_catalog_p106",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P107",
+      "characterId": "P107",
+      "containers": [
+        {
+          "id": "inventory_catalog_p107",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P108",
+      "characterId": "P108",
+      "containers": [
+        {
+          "id": "inventory_catalog_p108",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P109",
+      "characterId": "P109",
+      "containers": [
+        {
+          "id": "inventory_catalog_p109",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P110",
+      "characterId": "P110",
+      "containers": [
+        {
+          "id": "inventory_catalog_p110",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P111",
+      "characterId": "P111",
+      "containers": [
+        {
+          "id": "inventory_catalog_p111",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P112",
+      "characterId": "P112",
+      "containers": [
+        {
+          "id": "inventory_catalog_p112",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P113",
+      "characterId": "P113",
+      "containers": [
+        {
+          "id": "inventory_catalog_p113",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P114",
+      "characterId": "P114",
+      "containers": [
+        {
+          "id": "inventory_catalog_p114",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P115",
+      "characterId": "P115",
+      "containers": [
+        {
+          "id": "inventory_catalog_p115",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P116",
+      "characterId": "P116",
+      "containers": [
+        {
+          "id": "inventory_catalog_p116",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P117",
+      "characterId": "P117",
+      "containers": [
+        {
+          "id": "inventory_catalog_p117",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P118",
+      "characterId": "P118",
+      "containers": [
+        {
+          "id": "inventory_catalog_p118",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P119",
+      "characterId": "P119",
+      "containers": [
+        {
+          "id": "inventory_catalog_p119",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P120",
+      "characterId": "P120",
+      "containers": [
+        {
+          "id": "inventory_catalog_p120",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P121",
+      "characterId": "P121",
+      "containers": [
+        {
+          "id": "inventory_catalog_p121",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P122",
+      "characterId": "P122",
+      "containers": [
+        {
+          "id": "inventory_catalog_p122",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P123",
+      "characterId": "P123",
+      "containers": [
+        {
+          "id": "inventory_catalog_p123",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P124",
+      "characterId": "P124",
+      "containers": [
+        {
+          "id": "inventory_catalog_p124",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P125",
+      "characterId": "P125",
+      "containers": [
+        {
+          "id": "inventory_catalog_p125",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P126",
+      "characterId": "P126",
+      "containers": [
+        {
+          "id": "inventory_catalog_p126",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P127",
+      "characterId": "P127",
+      "containers": [
+        {
+          "id": "inventory_catalog_p127",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P128",
+      "characterId": "P128",
+      "containers": [
+        {
+          "id": "inventory_catalog_p128",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P129",
+      "characterId": "P129",
+      "containers": [
+        {
+          "id": "inventory_catalog_p129",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P130",
+      "characterId": "P130",
+      "containers": [
+        {
+          "id": "inventory_catalog_p130",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P131",
+      "characterId": "P131",
+      "containers": [
+        {
+          "id": "inventory_catalog_p131",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P132",
+      "characterId": "P132",
+      "containers": [
+        {
+          "id": "inventory_catalog_p132",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P133",
+      "characterId": "P133",
+      "containers": [
+        {
+          "id": "inventory_catalog_p133",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P134",
+      "characterId": "P134",
+      "containers": [
+        {
+          "id": "inventory_catalog_p134",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P135",
+      "characterId": "P135",
+      "containers": [
+        {
+          "id": "inventory_catalog_p135",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P136",
+      "characterId": "P136",
+      "containers": [
+        {
+          "id": "inventory_catalog_p136",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P137",
+      "characterId": "P137",
+      "containers": [
+        {
+          "id": "inventory_catalog_p137",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P138",
+      "characterId": "P138",
+      "containers": [
+        {
+          "id": "inventory_catalog_p138",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_P139",
+      "characterId": "P139",
+      "containers": [
+        {
+          "id": "inventory_catalog_p139",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_iron_hook_collector_one",
+      "characterId": "iron_hook_collector_one",
+      "containers": [
+        {
+          "id": "inventory_iron_hook_collector_one",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    },
+    {
+      "id": "inventory_iron_hook_collector_two",
+      "characterId": "iron_hook_collector_two",
+      "containers": [
+        {
+          "id": "inventory_iron_hook_collector_two",
+          "kind": "inventory",
+          "locationId": null,
+          "sourceStatus": "derived_bootstrap_inventory"
+        }
+      ],
+      "itemRefs": [],
+      "emptyReason": null,
+      "sourcePolicy": "container_derived_item_references"
+    }
+  ]
+}

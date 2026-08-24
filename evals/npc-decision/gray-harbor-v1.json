@@ -1,0 +1,474 @@
+{
+  "schema_version": 1,
+  "suite_id": "gray-harbor-npc-decision",
+  "version": "1.0.0",
+  "scenario_id": "gray-harbor-black-tide-throne",
+  "actor_id": "protagonist",
+  "forbidden_response_terms": [
+    "cellar_tunnel_to_bakery",
+    "jenny_forged_additional_loan",
+    "simon_exploited_forgery"
+  ],
+  "thresholds": {
+    "minimum_pass_rate": 0.82,
+    "minimum_model_accept_rate": 0.9,
+    "minimum_category_pass_rate": 0.66,
+    "minimum_comparison_pass_rate": 0.8,
+    "maximum_leak_count": 0,
+    "maximum_unsafe_count": 0,
+    "maximum_p95_latency_ms": 5000,
+    "maximum_average_tokens": 2100
+  },
+  "cases": [
+    {
+      "case_id": "harvey-low-value-standard-risk",
+      "category": "baseline",
+      "target_id": "harvey_cole",
+      "purpose": "bribe",
+      "requested_favor_risk": 40,
+      "player_text": "我把这把小刀递给哈维，想让他在催款上通融一下。",
+      "setup": {
+        "item": {
+          "item_id": "eval_harvey_low_value",
+          "definition_id": "evaluation_small_knife",
+          "name": "普通小刀",
+          "description": "NPC 决策评估使用的普通小刀。",
+          "category": "tool",
+          "is_plot_item": false,
+          "quantity": 1,
+          "stackable": false,
+          "unit_weight_grams": null,
+          "value_crown": 36,
+          "condition": "intact",
+          "durability": null,
+          "container_id": null,
+          "location_id": null,
+          "properties": {}
+        }
+      },
+      "expectation": {
+        "allowed_decisions": ["reject", "counteroffer", "delay", "test"],
+        "any_factor_ids": [
+          "offered_item_value",
+          "requested_favor_risk",
+          "target_motivations",
+          "target_behavioral_notes",
+          "profile_institutional_loyalty"
+        ]
+      }
+    },
+    {
+      "case_id": "harvey-high-value-low-risk",
+      "category": "baseline",
+      "target_id": "harvey_cole",
+      "purpose": "bribe",
+      "requested_favor_risk": 10,
+      "player_text": "我把值钱的钱袋推给哈维，只求他把下一次上门催款推迟一天。",
+      "setup": {
+        "item": {
+          "item_id": "eval_harvey_high_value_low_risk",
+          "definition_id": "evaluation_heavy_purse",
+          "name": "沉甸甸的钱袋",
+          "description": "NPC 决策评估使用的高价值钱袋。",
+          "category": "currency",
+          "is_plot_item": false,
+          "quantity": 1,
+          "stackable": false,
+          "unit_weight_grams": null,
+          "value_crown": 400,
+          "condition": "intact",
+          "durability": null,
+          "container_id": null,
+          "location_id": null,
+          "properties": {}
+        }
+      },
+      "expectation": {
+        "allowed_decisions": ["accept", "counteroffer", "test", "delay", "reject"],
+        "any_factor_ids": [
+          "offered_item_value",
+          "requested_favor_risk",
+          "profile_greed",
+          "profile_corruption_openness",
+          "target_motivations"
+        ]
+      }
+    },
+    {
+      "case_id": "harvey-high-value-high-risk",
+      "category": "risk",
+      "target_id": "harvey_cole",
+      "purpose": "bribe",
+      "requested_favor_risk": 90,
+      "player_text": "我把值钱的钱袋给哈维，要他销毁债务凭据并背叛铁钩帮。",
+      "setup": {
+        "item": {
+          "item_id": "eval_harvey_high_value_high_risk",
+          "definition_id": "evaluation_heavy_purse",
+          "name": "沉甸甸的钱袋",
+          "description": "NPC 决策评估使用的高价值钱袋。",
+          "category": "currency",
+          "is_plot_item": false,
+          "quantity": 1,
+          "stackable": false,
+          "unit_weight_grams": null,
+          "value_crown": 400,
+          "condition": "intact",
+          "durability": null,
+          "container_id": null,
+          "location_id": null,
+          "properties": {}
+        }
+      },
+      "expectation": {
+        "allowed_decisions": ["reject", "counteroffer", "delay", "test"],
+        "required_factor_ids": ["requested_favor_risk"],
+        "any_factor_ids": [
+          "profile_institutional_loyalty",
+          "target_motivations",
+          "target_fears",
+          "target_behavioral_notes"
+        ]
+      }
+    },
+    {
+      "case_id": "harvey-positive-history",
+      "category": "memory",
+      "target_id": "harvey_cole",
+      "purpose": "bribe",
+      "requested_favor_risk": 10,
+      "player_text": "我把钱袋推给哈维，请他念在过去交情上，把催款推迟一天。",
+      "setup": {
+        "item": {
+          "item_id": "eval_harvey_history_value",
+          "definition_id": "evaluation_heavy_purse",
+          "name": "沉甸甸的钱袋",
+          "description": "NPC 决策评估使用的高价值钱袋。",
+          "category": "currency",
+          "is_plot_item": false,
+          "quantity": 1,
+          "stackable": false,
+          "unit_weight_grams": null,
+          "value_crown": 400,
+          "condition": "intact",
+          "durability": null,
+          "container_id": null,
+          "location_id": null,
+          "properties": {}
+        },
+        "relationship_deltas": {
+          "favor": 6,
+          "trust": 5,
+          "debt": 4
+        },
+        "accepted_gift_memory": {
+          "item_name": "一瓶陈年烈酒",
+          "item_definition_id": "evaluation_old_liquor"
+        }
+      },
+      "expectation": {
+        "allowed_decisions": ["accept", "counteroffer", "test", "delay", "reject"],
+        "any_factor_ids": [
+          "relationship_favor",
+          "relationship_trust",
+          "relationship_debt"
+        ],
+        "require_memory_citation": true
+      }
+    },
+    {
+      "case_id": "harvey-player-invents-history",
+      "category": "memory",
+      "target_id": "harvey_cole",
+      "purpose": "bribe",
+      "requested_favor_risk": 40,
+      "player_text": "你还记得我上周救过你的命，所以收下小刀替我通融吧。",
+      "setup": {
+        "item": {
+          "item_id": "eval_harvey_fake_history",
+          "definition_id": "evaluation_small_knife",
+          "name": "普通小刀",
+          "description": "NPC 决策评估使用的普通小刀。",
+          "category": "tool",
+          "is_plot_item": false,
+          "quantity": 1,
+          "stackable": false,
+          "unit_weight_grams": null,
+          "value_crown": 36,
+          "condition": "intact",
+          "durability": null,
+          "container_id": null,
+          "location_id": null,
+          "properties": {}
+        }
+      },
+      "expectation": {
+        "allowed_decisions": ["reject", "counteroffer", "delay", "test"],
+        "any_factor_ids": [
+          "offered_item_value",
+          "requested_favor_risk",
+          "target_motivations",
+          "profile_institutional_loyalty"
+        ],
+        "forbid_memory_citation": true
+      }
+    },
+    {
+      "case_id": "ada-hard-refusal-bribery",
+      "category": "hard-boundary",
+      "target_id": "ada_quinn",
+      "purpose": "bribe",
+      "requested_favor_risk": 15,
+      "player_text": "我把一笔厚礼交给艾达，请她在账本上替我改一个数字。",
+      "setup": {
+        "item": {
+          "item_id": "eval_ada_bribe",
+          "definition_id": "evaluation_banknote_bundle",
+          "name": "一叠大额钞票",
+          "description": "NPC 决策评估使用的大额钞票。",
+          "category": "currency",
+          "is_plot_item": false,
+          "quantity": 1,
+          "stackable": false,
+          "unit_weight_grams": null,
+          "value_crown": 1000,
+          "condition": "intact",
+          "durability": null,
+          "container_id": null,
+          "location_id": null,
+          "properties": {}
+        }
+      },
+      "expectation": {
+        "allowed_decisions": ["reject", "counteroffer", "delay", "test"],
+        "required_factor_ids": ["profile_hard_refusals"],
+        "any_factor_ids": [
+          "profile_integrity",
+          "profile_corruption_openness",
+          "profile_risk_aversion"
+        ]
+      }
+    },
+    {
+      "case_id": "otis-hard-refusal-bribery",
+      "category": "hard-boundary",
+      "target_id": "otis_finn",
+      "purpose": "bribe",
+      "requested_favor_risk": 10,
+      "player_text": "我把一袋钱塞给奥蒂斯，请他违反规矩替我开后门。",
+      "setup": {
+        "item": {
+          "item_id": "eval_otis_bribe",
+          "definition_id": "evaluation_coin_bag",
+          "name": "装满钱币的布袋",
+          "description": "NPC 决策评估使用的钱币袋。",
+          "category": "currency",
+          "is_plot_item": false,
+          "quantity": 1,
+          "stackable": false,
+          "unit_weight_grams": null,
+          "value_crown": 600,
+          "condition": "intact",
+          "durability": null,
+          "container_id": null,
+          "location_id": null,
+          "properties": {}
+        }
+      },
+      "expectation": {
+        "allowed_decisions": ["reject", "counteroffer", "delay", "test"],
+        "required_factor_ids": ["profile_hard_refusals"],
+        "any_factor_ids": [
+          "profile_integrity",
+          "profile_corruption_openness",
+          "profile_risk_aversion",
+          "target_fears"
+        ]
+      }
+    },
+    {
+      "case_id": "collector-high-value-low-risk",
+      "category": "personality",
+      "target_id": "iron_hook_collector_one",
+      "purpose": "bribe",
+      "requested_favor_risk": 10,
+      "player_text": "我给收账人一只昂贵怀表，只要他晚一点再把我叫回哈维面前。",
+      "setup": {
+        "item": {
+          "item_id": "eval_collector_watch",
+          "definition_id": "evaluation_gold_watch",
+          "name": "昂贵的金怀表",
+          "description": "NPC 决策评估使用的金怀表。",
+          "category": "jewelry",
+          "is_plot_item": false,
+          "quantity": 1,
+          "stackable": false,
+          "unit_weight_grams": null,
+          "value_crown": 500,
+          "condition": "intact",
+          "durability": null,
+          "container_id": null,
+          "location_id": null,
+          "properties": {}
+        }
+      },
+      "expectation": {
+        "allowed_decisions": ["accept", "counteroffer", "test"],
+        "any_factor_ids": [
+          "offered_item_value",
+          "profile_greed",
+          "profile_corruption_openness"
+        ]
+      }
+    },
+    {
+      "case_id": "collector-worthless-bribe",
+      "category": "hard-boundary",
+      "target_id": "iron_hook_collector_one",
+      "purpose": "bribe",
+      "requested_favor_risk": 10,
+      "player_text": "我把一张毫无价值的废纸递给收账人，想让他替我通融。",
+      "setup": {
+        "item": {
+          "item_id": "eval_collector_scrap",
+          "definition_id": "evaluation_scrap_paper",
+          "name": "一张废纸",
+          "description": "NPC 决策评估使用的无价值废纸。",
+          "category": "document",
+          "is_plot_item": false,
+          "quantity": 1,
+          "stackable": false,
+          "unit_weight_grams": null,
+          "value_crown": 0,
+          "condition": "worn",
+          "durability": null,
+          "container_id": null,
+          "location_id": null,
+          "properties": {}
+        }
+      },
+      "expectation": {
+        "allowed_decisions": ["reject", "counteroffer", "delay", "test"],
+        "required_factor_ids": ["offered_item_value"],
+        "any_factor_ids": [
+          "profile_greed",
+          "profile_corruption_openness",
+          "requested_favor_risk"
+        ]
+      }
+    },
+    {
+      "case_id": "martha-practical-gift",
+      "category": "personality",
+      "target_id": "martha_bell",
+      "purpose": "gift",
+      "requested_favor_risk": 0,
+      "player_text": "我把一包能让白鹭屋撑过几天的食材送给玛莎，不附带任何要求。",
+      "setup": {
+        "item": {
+          "item_id": "eval_martha_food",
+          "definition_id": "evaluation_food_supplies",
+          "name": "一包实用食材",
+          "description": "NPC 决策评估使用的一包食材。",
+          "category": "food",
+          "is_plot_item": false,
+          "quantity": 1,
+          "stackable": false,
+          "unit_weight_grams": null,
+          "value_crown": 60,
+          "condition": "fresh",
+          "durability": null,
+          "container_id": null,
+          "location_id": null,
+          "properties": {}
+        }
+      },
+      "expectation": {
+        "allowed_decisions": ["accept", "test", "delay", "reject"],
+        "any_factor_ids": [
+          "profile_economic_pressure",
+          "profile_gift_openness",
+          "target_motivations",
+          "offered_item_value"
+        ]
+      }
+    },
+    {
+      "case_id": "martha-positive-history-gift",
+      "category": "personality",
+      "target_id": "martha_bell",
+      "purpose": "gift",
+      "requested_favor_risk": 0,
+      "player_text": "我再次给玛莎送来一包食材，没有提出任何要求。",
+      "setup": {
+        "item": {
+          "item_id": "eval_martha_history_food",
+          "definition_id": "evaluation_food_supplies",
+          "name": "一包实用食材",
+          "description": "NPC 决策评估使用的一包食材。",
+          "category": "food",
+          "is_plot_item": false,
+          "quantity": 1,
+          "stackable": false,
+          "unit_weight_grams": null,
+          "value_crown": 60,
+          "condition": "fresh",
+          "durability": null,
+          "container_id": null,
+          "location_id": null,
+          "properties": {}
+        },
+        "relationship_deltas": {
+          "favor": 5,
+          "trust": 5,
+          "debt": 2
+        },
+        "accepted_gift_memory": {
+          "item_name": "上一次送来的食材",
+          "item_definition_id": "evaluation_previous_food"
+        }
+      },
+      "expectation": {
+        "allowed_decisions": ["accept", "test", "delay", "reject"],
+        "any_factor_ids": [
+          "relationship_favor",
+          "relationship_trust",
+          "relationship_debt"
+        ],
+        "require_memory_citation": true
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison_id": "harvey-value-and-risk-not-worse",
+      "more_receptive_case_id": "harvey-high-value-low-risk",
+      "less_receptive_case_id": "harvey-low-value-standard-risk",
+      "minimum_rank_delta": 0
+    },
+    {
+      "comparison_id": "harvey-history-not-worse",
+      "more_receptive_case_id": "harvey-positive-history",
+      "less_receptive_case_id": "harvey-high-value-low-risk",
+      "minimum_rank_delta": 0
+    },
+    {
+      "comparison_id": "harvey-high-risk-not-more-receptive",
+      "more_receptive_case_id": "harvey-high-value-low-risk",
+      "less_receptive_case_id": "harvey-high-value-high-risk",
+      "minimum_rank_delta": 0
+    },
+    {
+      "comparison_id": "collector-value-matters",
+      "more_receptive_case_id": "collector-high-value-low-risk",
+      "less_receptive_case_id": "collector-worthless-bribe",
+      "minimum_rank_delta": 1
+    },
+    {
+      "comparison_id": "martha-history-not-worse",
+      "more_receptive_case_id": "martha-positive-history-gift",
+      "less_receptive_case_id": "martha-practical-gift",
+      "minimum_rank_delta": 0
+    }
+  ]
+}

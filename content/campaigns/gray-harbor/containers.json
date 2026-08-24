@@ -1,0 +1,12 @@
+{
+  "containers": [
+    {"id": "protagonist_inventory", "kind": "inventory", "ownerCharacterId": "protagonist"},
+    {"id": "protagonist_equipment", "kind": "equipment", "ownerCharacterId": "protagonist"},
+    {"id": "white_heron_front_table", "kind": "surface", "locationId": "white_heron_ground_floor"},
+    {"id": "white_heron_records", "kind": "records_storage", "locationId": "white_heron_ground_floor"},
+    {"id": "white_heron_till", "kind": "cashbox", "locationId": "white_heron_ground_floor"},
+    {"id": "white_heron_kitchen_pantry", "kind": "pantry", "locationId": "white_heron_kitchen"},
+    {"id": "shared_third_floor_room", "kind": "room_storage", "locationId": "white_heron_third_floor"},
+    {"id": "harvey_inventory", "kind": "inventory", "ownerCharacterId": "harvey_cole"}
+  ]
+}

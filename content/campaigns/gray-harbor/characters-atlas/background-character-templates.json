@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 2,
+  "templates": [
+    {
+      "id": "template_candle_oak_roomer",
+      "name": "栎木街后排出租屋住户",
+      "commonResidence": "housing_oak_back",
+      "streetId": "candle_oak",
+      "economicTier": "底层/低收入",
+      "ordinaryInventory": [
+        "零钱",
+        "钥匙",
+        "工作用品"
+      ],
+      "routineActivities": [
+        "取水",
+        "购买面包",
+        "邻里交谈"
+      ],
+      "possibleRelationTypes": [
+        "租客",
+        "邻居",
+        "债务关系"
+      ],
+      "forbiddenAutoFacts": [
+        "关键犯罪",
+        "秘密血缘",
+        "主线任务"
+      ]
+    },
+    {
+      "id": "template_wind_organ_apartment",
+      "name": "风琴巷三户公寓居民",
+      "commonResidence": "housing_organ_court",
+      "streetId": "candle_organ",
+      "economicTier": "底层/小职员",
+      "ordinaryInventory": [
+        "衣物",
+        "餐具",
+        "工作用品"
+      ],
+      "routineActivities": [
+        "共用厨房",
+        "洗衣",
+        "邻里交谈"
+      ],
+      "possibleRelationTypes": [
+        "邻居",
+        "房东租客"
+      ],
+      "forbiddenAutoFacts": [
+        "关键犯罪",
+        "秘密血缘",
+        "主线任务"
+      ]
+    },
+    {
+      "id": "template_old_port_sailor",
+      "name": "老港海员短租屋住客",
+      "commonResidence": "housing_harbor_boarding",
+      "streetId": "harbor_sailor",
+      "economicTier": "流动工人",
+      "ordinaryInventory": [
+        "海员包",
+        "绳具",
+        "零钱"
+      ],
+      "routineActivities": [
+        "码头工作",
+        "酒馆休息",
+        "打听船期"
+      ],
+      "possibleRelationTypes": [
+        "同船",
+        "雇主雇工",
+        "债务关系"
+      ],
+      "forbiddenAutoFacts": [
+        "关键走私线",
+        "主线任务"
+      ]
+    },
+    {
+      "id": "template_iron_bay_worker",
+      "name": "铁湾煤轨工棚工人",
+      "commonResidence": "housing_iron_boarding",
+      "streetId": "iron_machine",
+      "economicTier": "工人",
+      "ordinaryInventory": [
+        "工作手套",
+        "餐票",
+        "工具"
+      ],
+      "routineActivities": [
+        "铁路货场工作",
+        "工棚休息",
+        "工人交谈"
+      ],
+      "possibleRelationTypes": [
+        "工友",
+        "工会联系"
+      ],
+      "forbiddenAutoFacts": [
+        "关键犯罪",
+        "主线任务"
+      ]
+    },
+    {
+      "id": "template_south_well_lodger",
+      "name": "南井合租院居民",
+      "commonResidence": "housing_slope_courtyard",
+      "streetId": "slope_southwell",
+      "economicTier": "贫民/临时工",
+      "ordinaryInventory": [
+        "水桶",
+        "零钱",
+        "家用物品"
+      ],
+      "routineActivities": [
+        "取水",
+        "市场采购",
+        "院内交谈"
+      ],
+      "possibleRelationTypes": [
+        "邻居",
+        "家庭",
+        "债务关系"
+      ],
+      "forbiddenAutoFacts": [
+        "关键犯罪",
+        "秘密血缘",
+        "主线任务"
+      ]
+    },
+    {
+      "id": "template_bell_tower_clerk",
+      "name": "金钟职员公寓住户",
+      "commonResidence": "housing_bell_clerk",
+      "streetId": "bell_main",
+      "economicTier": "小职员",
+      "ordinaryInventory": [
+        "公文包",
+        "账册",
+        "通勤衣物"
+      ],
+      "routineActivities": [
+        "通勤",
+        "公告阅读",
+        "咖啡馆休息"
+      ],
+      "possibleRelationTypes": [
+        "同事",
+        "房东租客"
+      ],
+      "forbiddenAutoFacts": [
+        "关键金融内幕",
+        "主线任务"
+      ]
+    },
+    {
+      "id": "template_saint_bridge_student",
+      "name": "圣桥学生宿舍学生",
+      "commonResidence": "housing_bridge_students",
+      "streetId": "bridge_rise",
+      "economicTier": "学生/低收入",
+      "ordinaryInventory": [
+        "课本",
+        "文具",
+        "换洗衣物"
+      ],
+      "routineActivities": [
+        "上课",
+        "洗衣",
+        "学生社交"
+      ],
+      "possibleRelationTypes": [
+        "同学",
+        "导师学生"
+      ],
+      "forbiddenAutoFacts": [
+        "关键政治密谋",
+        "主线任务"
+      ]
+    },
+    {
+      "id": "template_white_cliff_servant",
+      "name": "白崖佣人小屋住户",
+      "commonResidence": "housing_cliff_servants",
+      "streetId": "cliff_seaview",
+      "economicTier": "仆役/服务业",
+      "ordinaryInventory": [
+        "制服",
+        "钥匙串",
+        "个人零钱"
+      ],
+      "routineActivities": [
+        "豪宅工作",
+        "采购",
+        "仆役交谈"
+      ],
+      "possibleRelationTypes": [
+        "雇主雇工",
+        "同事"
+      ],
+      "forbiddenAutoFacts": [
+        "关键贵族秘密",
+        "主线任务"
+      ]
+    },
+    {
+      "id": "template_daily_vendor",
+      "name": "街区日常摊贩或店员",
+      "commonResidence": null,
+      "streetId": null,
+      "economicTier": "小商贩/服务业",
+      "ordinaryInventory": [
+        "零钱",
+        "货品",
+        "记账纸条"
+      ],
+      "routineActivities": [
+        "开店",
+        "补货",
+        "收摊"
+      ],
+      "possibleRelationTypes": [
+        "顾客",
+        "邻居",
+        "供应商"
+      ],
+      "forbiddenAutoFacts": [
+        "关键线索",
+        "主线任务"
+      ]
+    }
+  ]
+}

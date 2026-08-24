@@ -1,0 +1,16 @@
+{
+  "discoveries": [
+    {
+      "id": "cellar_drainage_tunnel",
+      "locationId": "white_heron_cellar",
+      "aliases": ["地窖", "地下室", "墙壁", "排水口", "排水通道", "秘密通道"],
+      "factId": "cellar_tunnel_exists",
+      "clueId": "cellar_drainage_tunnel_entrance",
+      "exitIds": ["cellar_tunnel_to_bakery", "bakery_tunnel_to_cellar"],
+      "requiredConditionIds": ["cellar_tunnel_entrance_exposed"],
+      "initiallyKnownBy": ["martha_bell", "otis_finn"],
+      "timeMinutes": 10,
+      "revealText": "积水冲开的遮挡物后露出一条老排水通道，黑暗的通道伸向隔壁栎木街15号废弃面包房。你确认了入口，但这次行动在发现这里结束。"
+    }
+  ]
+}

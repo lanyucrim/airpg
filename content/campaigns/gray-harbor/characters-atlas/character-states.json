@@ -1,0 +1,7115 @@
+{
+  "schemaVersion": 2,
+  "worldTime": {
+    "era": "海历",
+    "year": 621,
+    "month": 10,
+    "day": 17,
+    "hour": 23,
+    "minute": 0,
+    "daysPerMonth": 30,
+    "monthsPerYear": 12
+  },
+  "states": [
+    {
+      "id": "state_protagonist",
+      "characterId": "protagonist",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "高",
+          "focus": "受债务危机牵引",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "中等",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "sourceStatus": "inferred",
+        "source": "campaign_start_context"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "高",
+          "focus": "受债务危机牵引",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "中等",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "inferred",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P001",
+      "characterId": "P001",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "高",
+          "focus": "受债务危机牵引",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "中等",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "sourceStatus": "inferred",
+        "source": "campaign_start_context"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "高",
+          "focus": "受债务危机牵引",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "中等",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "inferred",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P002",
+      "characterId": "P002",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "高",
+          "focus": "受债务危机牵引",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "中等",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "sourceStatus": "inferred",
+        "source": "campaign_start_context"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "高",
+          "focus": "受债务危机牵引",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "中等",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "inferred",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P003",
+      "characterId": "P003",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "中等",
+          "focus": "工作优先",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "中等",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "sourceStatus": "inferred",
+        "source": "campaign_start_context"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "中等",
+          "focus": "工作优先",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "中等",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "inferred",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P004",
+      "characterId": "P004",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "高",
+          "focus": "受债务危机牵引",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "中等",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "sourceStatus": "inferred",
+        "source": "campaign_start_context"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "高",
+          "focus": "受债务危机牵引",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "中等",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "inferred",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P005",
+      "characterId": "P005",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P006",
+      "characterId": "P006",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "中等",
+          "focus": "工作优先",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "中等",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "sourceStatus": "inferred",
+        "source": "campaign_start_context"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "中等",
+          "focus": "工作优先",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "中等",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "inferred",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P007",
+      "characterId": "P007",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P008",
+      "characterId": "P008",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P009",
+      "characterId": "P009",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P010",
+      "characterId": "P010",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P011",
+      "characterId": "P011",
+      "baseline": {
+        "mental": {
+          "mood": "警觉",
+          "stress": "低",
+          "focus": "执行任务",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "低",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "sourceStatus": "inferred",
+        "source": "campaign_start_context"
+      },
+      "current": {
+        "mental": {
+          "mood": "警觉",
+          "stress": "低",
+          "focus": "执行任务",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "低",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "inferred",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P012",
+      "characterId": "P012",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P013",
+      "characterId": "P013",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P014",
+      "characterId": "P014",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P015",
+      "characterId": "P015",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P016",
+      "characterId": "P016",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P017",
+      "characterId": "P017",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P018",
+      "characterId": "P018",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P019",
+      "characterId": "P019",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P020",
+      "characterId": "P020",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P021",
+      "characterId": "P021",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P022",
+      "characterId": "P022",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P023",
+      "characterId": "P023",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P024",
+      "characterId": "P024",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P025",
+      "characterId": "P025",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P026",
+      "characterId": "P026",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P027",
+      "characterId": "P027",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P028",
+      "characterId": "P028",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P029",
+      "characterId": "P029",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P030",
+      "characterId": "P030",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P031",
+      "characterId": "P031",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P032",
+      "characterId": "P032",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P033",
+      "characterId": "P033",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P034",
+      "characterId": "P034",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P035",
+      "characterId": "P035",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P036",
+      "characterId": "P036",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P037",
+      "characterId": "P037",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P038",
+      "characterId": "P038",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P039",
+      "characterId": "P039",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P040",
+      "characterId": "P040",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P041",
+      "characterId": "P041",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P042",
+      "characterId": "P042",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P043",
+      "characterId": "P043",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P044",
+      "characterId": "P044",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P045",
+      "characterId": "P045",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P046",
+      "characterId": "P046",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P047",
+      "characterId": "P047",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P048",
+      "characterId": "P048",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P049",
+      "characterId": "P049",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P050",
+      "characterId": "P050",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P051",
+      "characterId": "P051",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P052",
+      "characterId": "P052",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P053",
+      "characterId": "P053",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P054",
+      "characterId": "P054",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P055",
+      "characterId": "P055",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P056",
+      "characterId": "P056",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P057",
+      "characterId": "P057",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P058",
+      "characterId": "P058",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P059",
+      "characterId": "P059",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P060",
+      "characterId": "P060",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P061",
+      "characterId": "P061",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P062",
+      "characterId": "P062",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P063",
+      "characterId": "P063",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P064",
+      "characterId": "P064",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P065",
+      "characterId": "P065",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P066",
+      "characterId": "P066",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P067",
+      "characterId": "P067",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P068",
+      "characterId": "P068",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P069",
+      "characterId": "P069",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P070",
+      "characterId": "P070",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P071",
+      "characterId": "P071",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P072",
+      "characterId": "P072",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P073",
+      "characterId": "P073",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P074",
+      "characterId": "P074",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P075",
+      "characterId": "P075",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P076",
+      "characterId": "P076",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P077",
+      "characterId": "P077",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P078",
+      "characterId": "P078",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P079",
+      "characterId": "P079",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P080",
+      "characterId": "P080",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P081",
+      "characterId": "P081",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P082",
+      "characterId": "P082",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P083",
+      "characterId": "P083",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P084",
+      "characterId": "P084",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P085",
+      "characterId": "P085",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P086",
+      "characterId": "P086",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P087",
+      "characterId": "P087",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P088",
+      "characterId": "P088",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P089",
+      "characterId": "P089",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P090",
+      "characterId": "P090",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P091",
+      "characterId": "P091",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P092",
+      "characterId": "P092",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P093",
+      "characterId": "P093",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P094",
+      "characterId": "P094",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P095",
+      "characterId": "P095",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P096",
+      "characterId": "P096",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P097",
+      "characterId": "P097",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P098",
+      "characterId": "P098",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P099",
+      "characterId": "P099",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P100",
+      "characterId": "P100",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P101",
+      "characterId": "P101",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P102",
+      "characterId": "P102",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P103",
+      "characterId": "P103",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P104",
+      "characterId": "P104",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P105",
+      "characterId": "P105",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P106",
+      "characterId": "P106",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P107",
+      "characterId": "P107",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P108",
+      "characterId": "P108",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P109",
+      "characterId": "P109",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P110",
+      "characterId": "P110",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P111",
+      "characterId": "P111",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P112",
+      "characterId": "P112",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P113",
+      "characterId": "P113",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P114",
+      "characterId": "P114",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P115",
+      "characterId": "P115",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P116",
+      "characterId": "P116",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P117",
+      "characterId": "P117",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P118",
+      "characterId": "P118",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P119",
+      "characterId": "P119",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P120",
+      "characterId": "P120",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P121",
+      "characterId": "P121",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P122",
+      "characterId": "P122",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P123",
+      "characterId": "P123",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P124",
+      "characterId": "P124",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P125",
+      "characterId": "P125",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P126",
+      "characterId": "P126",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P127",
+      "characterId": "P127",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P128",
+      "characterId": "P128",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P129",
+      "characterId": "P129",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P130",
+      "characterId": "P130",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P131",
+      "characterId": "P131",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P132",
+      "characterId": "P132",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P133",
+      "characterId": "P133",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P134",
+      "characterId": "P134",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P135",
+      "characterId": "P135",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P136",
+      "characterId": "P136",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P137",
+      "characterId": "P137",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P138",
+      "characterId": "P138",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_P139",
+      "characterId": "P139",
+      "baseline": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "sourceStatus": "unknown",
+        "source": "unknown"
+      },
+      "current": {
+        "mental": {
+          "mood": "未记录",
+          "stress": "未知",
+          "focus": "未知",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "未记录",
+          "fatigue": "未知",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "未知"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "unknown",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_iron_hook_collector_one",
+      "characterId": "iron_hook_collector_one",
+      "baseline": {
+        "mental": {
+          "mood": "警觉",
+          "stress": "低",
+          "focus": "执行任务",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "低",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "sourceStatus": "inferred",
+        "source": "campaign_start_context"
+      },
+      "current": {
+        "mental": {
+          "mood": "警觉",
+          "stress": "低",
+          "focus": "执行任务",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "低",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "inferred",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    },
+    {
+      "id": "state_iron_hook_collector_two",
+      "characterId": "iron_hook_collector_two",
+      "baseline": {
+        "mental": {
+          "mood": "警觉",
+          "stress": "低",
+          "focus": "执行任务",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "低",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "sourceStatus": "inferred",
+        "source": "campaign_start_context"
+      },
+      "current": {
+        "mental": {
+          "mood": "警觉",
+          "stress": "低",
+          "focus": "执行任务",
+          "sleepDebt": "未知",
+          "notes": ""
+        },
+        "physical": {
+          "health": "稳定",
+          "fatigue": "低",
+          "pain": "未知",
+          "hunger": "未知",
+          "externalInjuries": [],
+          "mobility": "正常"
+        },
+        "asOfWorldTime": "海历621年10月17日23:00",
+        "sourceStatus": "inferred",
+        "sourceEvents": []
+      },
+      "dailyStateLog": [],
+      "dailyStatePolicy": {
+        "aiMayPropose": true,
+        "programMustValidate": true,
+        "sourceEventsRequired": true,
+        "fixedSchedule": false
+      }
+    }
+  ]
+}

@@ -11,6 +11,7 @@ from trpg_server.ai.platform.environment import load_backend_environment
 from trpg_server.ai.platform.weather_adapter import weather_director_from_environment
 from trpg_server.story.bootstrap import GRAY_HARBOR_CAMPAIGN_ID
 from trpg_server.ai.platform.deepseek import intent_parser_from_environment
+from trpg_server.ai.platform.item_interaction import item_interaction_adapter_from_environment
 from trpg_server.ai.player.narration import narrator_from_environment
 from trpg_server.characters.decision import npc_decider_from_environment
 from trpg_server.behavior.routine_rules import routine_director_from_environment
@@ -47,6 +48,7 @@ service = GameService(
     npc_decider_from_environment(),
     routine_director_from_environment(),
     weather_director_from_environment(),
+    item_interaction_adapter_from_environment(),
 )
 
 
@@ -125,6 +127,16 @@ def get_weather_model_status() -> dict[str, object]:
     adapter = service.weather_director.adapter
     return {
         "enabled": adapter.available,
+        "provider": getattr(adapter, "provider_name", None),
+        "model": getattr(adapter, "model_name", None),
+    }
+
+
+@app.get("/api/v1/system/item-interaction-model")
+def get_item_interaction_model_status() -> dict[str, object]:
+    adapter = service.turn_pipeline.resolver.item_interaction_adapter
+    return {
+        "enabled": bool(adapter is not None and adapter.available),
         "provider": getattr(adapter, "provider_name", None),
         "model": getattr(adapter, "model_name", None),
     }

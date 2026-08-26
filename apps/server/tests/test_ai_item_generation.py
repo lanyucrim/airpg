@@ -78,12 +78,21 @@ def _references() -> DailyItemReferenceTable:
 
 def _bread_candidate(**overrides: object) -> dict[str, object]:
     value: dict[str, object] = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "isDailyItem": True,
         "itemKey": "bread_piece_each",
         "canonicalName": "面包",
         "aliases": ["烤面包"],
-        "description": "一块供单人食用的普通烘烤面包。",
+        "materials": ["小麦面团"],
+        "formAndStructure": "表皮包裹松软内部的单块烘烤结构",
+        "sizeDescription": "约为成年人一餐可食用的单手大小",
+        "observableFeatures": ["表皮呈浅褐色", "切面有细小气孔"],
+        "unknownFacts": ["具体配方无法从外观确认"],
+        "description": (
+            "这是一块小麦面团制成的面包，表皮包裹松软内部的单块烘烤结构，"
+            "约为成年人一餐可食用的单手大小。表皮呈浅褐色，切面有细小气孔；"
+            "具体配方无法从外观确认。"
+        ),
         "category": "food",
         "unitDescription": "一块单人份面包",
         "stackable": True,
@@ -153,6 +162,9 @@ def test_one_model_call_generates_definition_price_weight_and_reference() -> Non
     assert item["id"] == "daily_food_bread_piece_each"
     assert item["definitionId"] == item["id"]
     assert item["name"] == "面包"
+    assert "小麦面团" in item["description"]
+    assert "单块烘烤结构" in item["description"]
+    assert "切面有细小气孔" in item["description"]
     assert item["isPlotItem"] is False
     assert item["quantity"] == 1
     assert item["unitWeightGrams"] == 120
@@ -227,7 +239,16 @@ def test_model_normalization_reuses_equivalent_known_atlas_definition() -> None:
         itemKey="rye_bread_half_loaf",
         canonicalName="半条黑麦面包",
         aliases=[],
-        description="半条供多人分食的普通黑麦面包。",
+        materials=["黑麦面团"],
+        formAndStructure="外皮包裹紧实内部的半条烘烤结构",
+        sizeDescription="约为完整长条面包的一半",
+        observableFeatures=["外皮呈深褐色", "切面组织紧密"],
+        unknownFacts=["具体配方无法从外观确认"],
+        description=(
+            "这是一块黑麦面团制成的面包，外皮包裹紧实内部的半条烘烤结构，"
+            "约为完整长条面包的一半。外皮呈深褐色，切面组织紧密；"
+            "具体配方无法从外观确认。"
+        ),
         unitDescription="半条黑麦面包",
         unitWeightGrams=225,
     )
@@ -299,12 +320,20 @@ def test_new_wording_with_same_canonical_key_reuses_definition() -> None:
 def test_existing_price_weight_reference_overrides_new_model_estimate() -> None:
     adapter = FakeGenerationAdapter(
         {
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "isDailyItem": True,
             "itemKey": "banana_medium_each",
             "canonicalName": "香蕉",
             "aliases": ["中等香蕉"],
-            "description": "一根中等大小的普通香蕉。",
+            "materials": ["香蕉果皮", "香蕉果肉"],
+            "formAndStructure": "果皮包裹果肉的弯曲长条结构",
+            "sizeDescription": "一只手可以握住的中等大小",
+            "observableFeatures": ["果皮呈黄色", "两端逐渐收窄"],
+            "unknownFacts": [],
+            "description": (
+                "一根由香蕉果皮包裹香蕉果肉的香蕉，果皮包裹果肉的弯曲长条结构，"
+                "一只手可以握住的中等大小。果皮呈黄色，两端逐渐收窄。"
+            ),
             "category": "food",
             "unitDescription": "一根中等大小、带皮的完整香蕉",
             "stackable": True,
@@ -383,6 +412,9 @@ def test_generated_cache_rejects_price_weight_reference_drift() -> None:
         _bread_candidate(confidence=0.2),
         _bread_candidate(unitWeightGrams=0),
         _bread_candidate(equipment={}),
+        _bread_candidate(materials=[], unknownFacts=[]),
+        _bread_candidate(observableFeatures=[]),
+        _bread_candidate(description="一块普通面包，没有保存候选中的详细物理事实。"),
     ],
 )
 def test_rejected_candidate_does_not_modify_catalogs(
@@ -423,6 +455,30 @@ def test_adapter_failure_does_not_modify_catalogs() -> None:
     assert resolution.entry is None
     assert catalog.definitions == ()
     assert len(references.references) == 2
+
+
+def test_unknown_material_is_preserved_in_description_and_audit() -> None:
+    candidate = _bread_candidate(
+        materials=[],
+        unknownFacts=["材质无法从现有描述确认"],
+        description=(
+            "这是一块普通面包，表皮包裹松软内部的单块烘烤结构，"
+            "约为成年人一餐可食用的单手大小。表皮呈浅褐色，切面有细小气孔；"
+            "材质无法从现有描述确认。"
+        ),
+    )
+
+    resolution = resolve_daily_item_definition(
+        _catalog(),
+        _references(),
+        DailyItemGenerationRequest("一块材质不明的面包"),
+        FakeGenerationAdapter(candidate),
+    )
+
+    assert resolution.status == "model_accepted"
+    assert resolution.entry is not None
+    assert "材质无法从现有描述确认" in resolution.entry.item["description"]
+    assert "未确认：材质无法从现有描述确认" in resolution.entry.assumptions
 
 
 def test_stale_item_contract_snapshot_is_rejected() -> None:
@@ -477,8 +533,13 @@ def test_deepseek_generation_adapter_requests_all_fields_in_one_call() -> None:
     body = captured["body"]
     assert isinstance(body, dict)
     assert body["response_format"] == {"type": "json_object"}
-    assert body["temperature"] == 0.2
+    assert body["temperature"] == 0.1
     assert body["max_tokens"] <= 700
+    prompt = json.dumps(body, ensure_ascii=False)
+    assert "materials" in prompt
+    assert "formAndStructure" in prompt
+    assert "observableFeatures" in prompt
+    assert "材质无法从现有描述确认" in prompt
     assert "daily-item-test-key" not in json.dumps(body)
 
 

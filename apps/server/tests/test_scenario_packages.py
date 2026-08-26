@@ -197,7 +197,7 @@ def test_package_compiles_to_deterministic_replayable_initial_events() -> None:
     assert first[0].payload["scenarioContentHash"] == package.content_hash
     assert first[0].payload["scenarioSourceVersion"] == "4.2"
     assert first[0].payload["scenarioSourceSha256"] == (
-        "601ef8717bd9bbb239a81d487f6d3af8e70f93ab2f1061620595058735c9bc4f"
+        "4795d15a7b03925110456bae6573f66cf7e05bd8cc0017d1f924bee42bef8f3a"
     )
     assert first[0].payload["scenarioCatalogSchemaVersion"] == 2
 

@@ -155,6 +155,8 @@ def interpret_player_text(
             if character_id is not None
             else _unresolved_command(actor_id, normalized, "target", "missing")
         )
+    elif _looks_like_item_interaction(state, normalized, actor_id):
+        command = _parse_item_interaction(state, normalized, actor_id)
     elif _looks_like_item_operation(normalized):
         command = _parse_item_operation(state, normalized, actor_id)
     elif _looks_like_take_item(normalized):
@@ -371,11 +373,22 @@ def resolve(
     state: Projection,
     command: ParsedCommand,
     npc_decision: ConfirmedNpcDecision | None = None,
+    *,
+    item_interaction_adapter=None,
 ) -> Resolution:
     from trpg_server.behavior.commands import characters, items, locations, story, time
+    from trpg_server.behavior.commands import maintenance
 
+    if command.action_type in {"item_interaction", "store_item", "retrieve_item", "combine_items"}:
+        return _resolve_item_interaction(
+            state,
+            command,
+            adapter=item_interaction_adapter,
+        )
     if command.action_type in items.ACTION_TYPES:
         return items.resolve_item_command(state, command)
+    if command.action_type in maintenance.ACTION_TYPES:
+        return maintenance.resolve_maintenance_command(state, command)
     if command.action_type in characters.ACTION_TYPES:
         return characters.resolve_character_command(state, command, npc_decision)
     if command.action_type in locations.ACTION_TYPES:
@@ -601,18 +614,15 @@ def _resolve_unequip_item(state: Projection, command: ParsedCommand) -> Resoluti
 
 
 def _resolve_combine_items(state: Projection, command: ParsedCommand) -> Resolution:
-    del state
-    return Resolution(
-        status="rejected",
-        outcome="item_combination_not_defined",
-        narrative="当前物品基础模块尚未定义配方和组合结果，因此没有组合任何物品。",
-        command=command,
-        reasons=[DecisionReason(
-            "item_combination_not_defined",
-            "物品记录没有配方或组合结果字段",
-            "neutral",
-        )],
-    )
+    return _resolve_item_interaction(state, command)
+
+
+def _resolve_item_interaction(state: Projection, command: ParsedCommand, *, adapter=None) -> Resolution:
+    """Bridge the behavior router to the isolated interaction orchestrator."""
+
+    from trpg_server.behavior.item_interactions import resolve_item_interaction
+
+    return resolve_item_interaction(state, command, adapter=adapter)
 
 
 def _resolve_discard_item(state: Projection, command: ParsedCommand) -> Resolution:
@@ -672,6 +682,18 @@ def _resolve_remove_item(
     reason: str,
 ) -> Resolution:
     item = state.items.get(str(command.parameters.get("itemId", command.target_id)))
+    if item is not None and event_type == "item.destroyed" and item.is_plot_item:
+        return Resolution(
+            status="rejected",
+            outcome="plot_item_requires_story_confirmation",
+            narrative=f"不能直接销毁剧情物品“{item.name}”；需要剧情确认。",
+            command=command,
+            reasons=[DecisionReason(
+                "plot_item_requires_story_confirmation",
+                "剧情物品必须由剧情领域的专用确认事件处理",
+                "negative",
+            )],
+        )
     operation = "discard" if event_type == "item.discarded" else "destroy"
     check = can_operate(state, item, command.actor_id, operation)
     if not check.allowed:
@@ -2263,7 +2285,7 @@ def _looks_like_item_operation(text: str) -> bool:
     return any(
         marker in text
         for marker in (
-            "装备", "穿上", "脱下", "卸下", "取下", "摘下", "使用", "用一下", "丢弃", "扔掉", "销毁", "毁掉", "组合", "合成", "拼接",
+            "装备", "穿上", "脱下", "卸下", "取下", "摘下", "使用", "用一下", "丢弃", "扔掉", "销毁", "毁掉", "修理", "维修", "组合", "合成", "拼接",
         )
     )
 
@@ -2287,10 +2309,13 @@ def _parse_item_operation(
                 authority="player",
             )
         return _unresolved_command(actor_id, text, "item", "missing")
-    item, status = _match_item(state, text, ("装备", "穿上", "脱下", "卸下", "取下", "摘下", "使用", "用", "丢弃", "扔掉", "销毁", "毁掉"))
+    item, status = _match_item(state, text, ("装备", "穿上", "脱下", "卸下", "取下", "摘下", "使用", "用", "丢弃", "扔掉", "销毁", "毁掉", "修理", "维修"))
     if item is None:
         return _unresolved_command(actor_id, text, "item", status)
-    if any(marker in text for marker in ("脱下", "卸下", "取下", "摘下")):
+    if any(marker in text for marker in ("修理", "维修")):
+        action_type = "repair_item"
+        materials = [candidate.item_id for candidate in _match_items(state, text) if candidate.item_id != item.item_id]
+    elif any(marker in text for marker in ("脱下", "卸下", "取下", "摘下")):
         action_type = "unequip_item"
     elif any(marker in text for marker in ("装备", "穿上")):
         action_type = "equip_item"
@@ -2304,7 +2329,125 @@ def _parse_item_operation(
         action_type=action_type,
         actor_id=actor_id,
         target_id=item.item_id,
-        parameters={"itemId": item.item_id},
+        parameters={
+            "itemId": item.item_id,
+            **({"materialItemIds": materials} if action_type == "repair_item" else {}),
+        },
+        original_text=text,
+        authority="player",
+    )
+
+
+def _looks_like_item_interaction(
+    state: Projection | None,
+    text: str,
+    actor_id: str,
+) -> bool:
+    """Recognize free-form physical item actions before generic item verbs."""
+
+    if any(marker in text for marker in ("组合", "合成", "拼接")):
+        return True
+    furniture = _match_furniture(state, text, actor_id)
+    if furniture is not None and any(
+        marker in text
+        for marker in ("放进", "放入", "装进", "存入", "收进", "取出", "拿出", "拿来")
+    ):
+        return True
+    if state is not None and _match_items(state, text):
+        # Keep the established generic ``使用物品`` route intact.  Free-form
+        # interaction routing is reserved for an explicit physical target or
+        # operation, such as cutting, prying, inspecting or combining.
+        physical_markers = (
+            "撬", "切", "割", "划", "拆", "打开", "检查", "检视", "照明",
+            "点燃", "点火", "粘", "连接", "处理", "触碰",
+            "接触", "擦", "包住", "浸润", "倒入", "倒出", "封住", "堵住",
+        )
+        return "用" in text and any(marker in text for marker in physical_markers)
+    return False
+
+
+def _parse_item_interaction(
+    state: Projection | None,
+    text: str,
+    actor_id: str,
+) -> ParsedCommand:
+    if state is None:
+        return _unresolved_command(actor_id, text, "item", "missing")
+    if any(marker in text for marker in ("组合", "合成", "拼接")):
+        items = _match_items(state, text)
+        if len(items) < 2:
+            return _unresolved_command(actor_id, text, "item", "missing")
+        selected = items[:4]
+        return ParsedCommand(
+            action_type="combine_items",
+            actor_id=actor_id,
+            target_id=selected[0].item_id,
+            parameters={
+                "itemIds": [item.item_id for item in selected],
+                "targetKind": "item",
+                "targetId": selected[0].item_id,
+                "operation": "combine",
+            },
+            original_text=text,
+            authority="player",
+        )
+
+    furniture = _match_furniture(state, text, actor_id)
+    is_retrieve = furniture is not None and any(
+        marker in text for marker in ("取出", "拿出", "拿来")
+    )
+    is_store = furniture is not None and any(
+        marker in text for marker in ("放进", "放入", "装进", "存入", "收进")
+    )
+    if is_retrieve or is_store:
+        if is_retrieve:
+            items = [
+                item
+                for item in _match_items(state, text)
+                if item.container_id == furniture.container_id
+            ]
+            operation = "retrieve"
+            action_type = "retrieve_item"
+        else:
+            items = _match_items(state, text)
+            operation = "store"
+            action_type = "store_item"
+        if not items:
+            return _unresolved_command(actor_id, text, "item", "missing")
+        item = items[0]
+        return ParsedCommand(
+            action_type=action_type,
+            actor_id=actor_id,
+            target_id=furniture.container_id,
+            parameters={
+                "itemIds": [item.item_id],
+                "targetKind": "furniture",
+                "targetId": furniture.container_id,
+                "operation": operation,
+            },
+            original_text=text,
+            authority="player",
+        )
+
+    # ``用 X 撬锁/照明/切割`` is intentionally target-neutral: the current
+    # internal structure is authoritative, while the AI candidate may still
+    # reject the proposed physical effect or request clarification.
+    item, status = _match_item(state, text, ("用", "使用"))
+    if item is None:
+        return _unresolved_command(actor_id, text, "item", status)
+    current_location = state.character_locations.get(actor_id)
+    if current_location is None:
+        return _unresolved_command(actor_id, text, "location", "missing")
+    return ParsedCommand(
+        action_type="item_interaction",
+        actor_id=actor_id,
+        target_id=current_location,
+        parameters={
+            "itemIds": [item.item_id],
+            "targetKind": "location",
+            "targetId": current_location,
+            "operation": "apply",
+        },
         original_text=text,
         authority="player",
     )
@@ -2319,6 +2462,32 @@ def _match_items(state: Projection, text: str) -> list[ItemInstance]:
             matches.append((max(lengths), item))
     matches.sort(key=lambda value: (-value[0], value[1].item_id))
     return [item for _, item in matches]
+
+
+def _match_furniture(
+    state: Projection | None,
+    text: str,
+    actor_id: str,
+):
+    if state is None:
+        return None
+    location_id = state.character_locations.get(actor_id)
+    matches = []
+    for container in state.containers.values():
+        if container.kind != "furniture" or not container.visible:
+            continue
+        if container.location_id != location_id:
+            continue
+        aliases = (
+            container.container_id,
+            container.furniture_name or "",
+            container.furniture_kind or "",
+        )
+        lengths = [len(alias) for alias in aliases if alias and alias in text]
+        if lengths:
+            matches.append((max(lengths), container))
+    matches.sort(key=lambda value: (-value[0], value[1].container_id))
+    return matches[0][1] if matches else None
 
 
 def _looks_like_consume(text: str) -> bool:

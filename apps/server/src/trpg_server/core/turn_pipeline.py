@@ -23,6 +23,7 @@ from trpg_server.world.weather import (
     WeatherGenerationResult,
     materialize_weather_events,
 )
+from trpg_server.world.time import materialize_clothing_wear_event_plan
 
 
 @dataclass(frozen=True, slots=True)
@@ -178,6 +179,14 @@ class AuthoritativeTurnPipeline:
             )
             resolution.events.extend(
                 validate_world_simulation(provisional_state, simulation_candidates)
+            )
+        # Clothing daily wear is materialized only after the complete
+        # proposed event list is known.  This keeps time events as the causal
+        # source and avoids charging wear for equipment changes that occur
+        # after an interval.
+        if resolution.events:
+            resolution.events = list(
+                materialize_clothing_wear_event_plan(state, resolution.events)
             )
         predicted_version = state_version + (1 if resolution.events else 0)
         predicted_state = self.projection_runner.replay(

@@ -36,7 +36,7 @@ from trpg_server.items.functions import (
 from trpg_server.items.models import ItemDefinition
 
 
-GENERATION_SCHEMA_VERSION = 1
+GENERATION_SCHEMA_VERSION = 2
 MINIMUM_GENERATION_CONFIDENCE = 0.60
 MAX_RETAIL_USD = Decimal("100000")
 MAX_UNIT_WEIGHT_GRAMS = 1_000_000
@@ -118,6 +118,11 @@ _CANDIDATE_FIELDS = frozenset(
         "itemKey",
         "canonicalName",
         "aliases",
+        "materials",
+        "formAndStructure",
+        "sizeDescription",
+        "observableFeatures",
+        "unknownFacts",
         "description",
         "category",
         "unitDescription",
@@ -209,6 +214,11 @@ class DailyItemGenerationCandidate:
     item_key: str
     canonical_name: str
     aliases: tuple[str, ...]
+    materials: tuple[str, ...]
+    form_and_structure: str
+    size_description: str
+    observable_features: tuple[str, ...]
+    unknown_facts: tuple[str, ...]
     description: str
     category: str
     unit_description: str
@@ -242,14 +252,59 @@ class DailyItemGenerationCandidate:
         if item_key.startswith("daily_"):
             raise DailyItemGenerationError("itemKey must not include the daily_ prefix")
         name = _non_empty_string(output["canonicalName"], "canonicalName")
+        materials = _string_tuple(
+            output["materials"], "materials", maximum=4, item_maximum=80
+        )
+        form_and_structure = _non_empty_string(
+            output["formAndStructure"], "formAndStructure"
+        )
+        size_description = _non_empty_string(
+            output["sizeDescription"], "sizeDescription"
+        )
+        observable_features = _string_tuple(
+            output["observableFeatures"],
+            "observableFeatures",
+            maximum=6,
+            item_maximum=120,
+        )
+        unknown_facts = _string_tuple(
+            output["unknownFacts"], "unknownFacts", maximum=4, item_maximum=120
+        )
         description = _non_empty_string(output["description"], "description")
         unit_description = _non_empty_string(
             output["unitDescription"], "unitDescription"
         )
         if len(name) > 80:
             raise DailyItemGenerationError("canonicalName cannot exceed 80 characters")
-        if len(description) > 300:
-            raise DailyItemGenerationError("description cannot exceed 300 characters")
+        if len(form_and_structure) > 160:
+            raise DailyItemGenerationError(
+                "formAndStructure cannot exceed 160 characters"
+            )
+        if len(size_description) > 120:
+            raise DailyItemGenerationError(
+                "sizeDescription cannot exceed 120 characters"
+            )
+        if not observable_features:
+            raise DailyItemGenerationError(
+                "observableFeatures must contain at least one physical feature"
+            )
+        if not materials and "材质无法从现有描述确认" not in unknown_facts:
+            raise DailyItemGenerationError(
+                "an unknown material requires the exact unknown fact "
+                "'材质无法从现有描述确认'"
+            )
+        if not 24 <= len(description) <= 360:
+            raise DailyItemGenerationError(
+                "description must contain between 24 and 360 characters"
+            )
+        _validate_physical_description(
+            description,
+            materials=materials,
+            form_and_structure=form_and_structure,
+            size_description=size_description,
+            observable_features=observable_features,
+            unknown_facts=unknown_facts,
+        )
         if len(unit_description) > 120:
             raise DailyItemGenerationError("unitDescription cannot exceed 120 characters")
         aliases = _string_tuple(output["aliases"], "aliases", maximum=8)
@@ -286,7 +341,7 @@ class DailyItemGenerationCandidate:
                 f"confidence is below the acceptance threshold {minimum_confidence}"
             )
         assumptions = _string_tuple(
-            output["assumptions"], "assumptions", maximum=8, item_maximum=200
+            output["assumptions"], "assumptions", maximum=4, item_maximum=200
         )
         lookup_terms = (name, *aliases)
         if len({_normalize_lookup(value) for value in lookup_terms}) != len(lookup_terms):
@@ -297,6 +352,11 @@ class DailyItemGenerationCandidate:
             item_key=item_key,
             canonical_name=name,
             aliases=aliases,
+            materials=materials,
+            form_and_structure=form_and_structure,
+            size_description=size_description,
+            observable_features=observable_features,
+            unknown_facts=unknown_facts,
             description=description,
             category=category,
             unit_description=unit_description,
@@ -858,7 +918,9 @@ def render_daily_item_definition_markdown(
             "## 边界",
             "",
             "- 新短语先查询本目录；命中后不调用 AI。",
-            "- 未命中时一次候选同时包含名称、描述、类别、堆叠、美元估价和克重；克朗由程序按苹果基准计算。",
+            "- 未命中时一次候选同时包含名称、材质、结构、粗略尺寸、可观察特征、未知事实、类别、堆叠、美元估价和克重；克朗由程序按苹果基准计算。",
+            "- 材质、结构、尺寸、特征和未知事实必须逐项出现在最终 `description` 中；材质无法确认时必须明确保留未知，不能由 AI 猜测填满。",
+            "- 最终物品仍使用正式 15 字段契约；结构化物理候选只用于生成期校验，不会扩充物品基础字段。",
             "- 内嵌 `item` 始终通过当前正式物品契约校验；契约或生成字段策略变化后旧目录会拒绝加载，必须显式迁移或重建。",
             "- AI 只可提出受约束的装备规格和通用消耗效果候选；高风险、受限风险和重大效果会被程序拒绝。",
             "- 消耗效果始终标记为需要对应领域再次裁决，不会由物品目录直接修改人物、地点、物品或世界状态。",
@@ -901,6 +963,12 @@ def _entry_from_candidate(
         for value in aliases
         if _normalize_lookup(value) != _normalize_lookup(candidate.canonical_name)
     )
+    audit_assumptions = _deduplicated_terms(
+        (
+            *candidate.assumptions,
+            *(f"未确认：{value}" for value in candidate.unknown_facts),
+        )
+    )
     return DailyItemDefinitionEntry.from_mapping(
         {
             "itemKey": candidate.item_key,
@@ -908,7 +976,7 @@ def _entry_from_candidate(
             "unitDescription": candidate.unit_description,
             "sourceStatus": "model_generated",
             "confidence": candidate.confidence,
-            "assumptions": list(candidate.assumptions),
+            "assumptions": list(audit_assumptions),
             "modelAudit": _model_audit(adapter, metrics).to_mapping(),
             "item": definition.to_payload(),
         }
@@ -1122,6 +1190,37 @@ def _string_tuple(
         normalized.add(key)
         result.append(text)
     return tuple(result)
+
+
+def _validate_physical_description(
+    description: str,
+    *,
+    materials: tuple[str, ...],
+    form_and_structure: str,
+    size_description: str,
+    observable_features: tuple[str, ...],
+    unknown_facts: tuple[str, ...],
+) -> None:
+    """Require the saved prose to preserve every validated physical fact."""
+
+    normalized_description = _normalize_lookup(description)
+    required_facts = (
+        *materials,
+        form_and_structure,
+        size_description,
+        *observable_features,
+        *unknown_facts,
+    )
+    missing = [
+        value
+        for value in required_facts
+        if _normalize_lookup(value) not in normalized_description
+    ]
+    if missing:
+        raise DailyItemGenerationError(
+            "description does not preserve physical candidate facts: "
+            + ", ".join(missing)
+        )
 
 
 def _deduplicated_terms(values: tuple[str, ...]) -> tuple[str, ...]:

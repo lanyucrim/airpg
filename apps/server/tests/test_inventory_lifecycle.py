@@ -168,3 +168,53 @@ def test_retired_deletion_style_discard_event_is_rejected() -> None:
             ],
             1,
         )
+
+
+def test_plot_item_cannot_be_destroyed_by_generic_player_command() -> None:
+    state = Projection(campaign_id="cmp_plot_destroy", player_character_id="player")
+    state.character_locations["player"] = "market_square"
+    state.locations["market_square"] = object()  # type: ignore[assignment]
+    state.containers["player_pack"] = ItemContainer(
+        container_id="player_pack",
+        kind="inventory",
+        owner_character_id="player",
+    )
+    plot_item = _bread()
+    plot_item.item_id = "plot_ledger"
+    plot_item.definition_id = "plot_ledger_definition"
+    plot_item.name = "黑潮账本"
+    plot_item.is_plot_item = True
+    plot_item.container_id = "player_pack"
+    state.items[plot_item.item_id] = plot_item
+
+    command = interpret_player_text("销毁黑潮账本", actor_id="player", state=state)
+    resolution = resolve(state, command)
+
+    assert resolution.status == "rejected"
+    assert resolution.outcome == "plot_item_requires_story_confirmation"
+    assert not resolution.events
+
+
+def test_projection_rejects_generic_plot_item_destroy_event() -> None:
+    plot_item = _bread()
+    plot_item.item_id = "plot_ledger"
+    plot_item.definition_id = "plot_ledger_definition"
+    plot_item.is_plot_item = True
+    created = build_item_created_event(actor_id="system", world_time=1, item=plot_item)
+    with pytest.raises(ValueError, match="story-confirmed"):
+        replay(
+            "cmp_plot_destroy_replay",
+            [
+                _container_event("pantry", "keeper"),
+                created,
+                Event(
+                    "evt_plot_destroy",
+                    "item.destroyed",
+                    "player",
+                    2,
+                    {"itemId": "plot_ledger", "characterId": "player"},
+                    schema_version=3,
+                ),
+            ],
+            3,
+        )

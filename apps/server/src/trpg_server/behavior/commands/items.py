@@ -4,6 +4,7 @@ from trpg_server.core.state import ParsedCommand, Projection, Resolution
 
 ACTION_TYPES = frozenset({
     "take_item", "consume_item", "use_item", "equip_item", "unequip_item", "combine_items",
+    "item_interaction", "store_item", "retrieve_item",
     "discard_item", "destroy_item", "purchase_item",
 })
 
@@ -18,6 +19,9 @@ def resolve_item_command(state: Projection, command: ParsedCommand) -> Resolutio
         "equip_item": router._resolve_equip_item,
         "unequip_item": router._resolve_unequip_item,
         "combine_items": router._resolve_combine_items,
+        "item_interaction": router._resolve_item_interaction,
+        "store_item": router._resolve_item_interaction,
+        "retrieve_item": router._resolve_item_interaction,
         "discard_item": router._resolve_discard_item,
         "destroy_item": router._resolve_destroy_item,
         "purchase_item": router.resolve_purchase,

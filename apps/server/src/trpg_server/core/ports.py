@@ -102,6 +102,8 @@ class NarratorPort(Protocol):
 class LegacyCommandResolver:
     """Compatibility adapter while action families migrate out of engine.py."""
 
+    item_interaction_adapter: Any | None = None
+
     def resolve(
         self,
         state: Projection,
@@ -110,7 +112,14 @@ class LegacyCommandResolver:
     ) -> Resolution:
         from trpg_server.behavior.router import resolve
 
-        return resolve(state, command, npc_decision)
+        if self.item_interaction_adapter is None:
+            return resolve(state, command, npc_decision)
+        return resolve(
+            state,
+            command,
+            npc_decision,
+            item_interaction_adapter=self.item_interaction_adapter,
+        )
 
 
 @dataclass(frozen=True, slots=True)

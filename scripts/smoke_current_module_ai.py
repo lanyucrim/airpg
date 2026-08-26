@@ -25,7 +25,11 @@ from trpg_server.ai.platform.environment import load_backend_environment  # noqa
 from trpg_server.ai.platform.weather_adapter import (  # noqa: E402
     DeepSeekWeatherAdapter,
 )
+from trpg_server.ai.platform.item_interaction import (  # noqa: E402
+    DeepSeekItemInteractionAdapter,
+)
 from trpg_server.behavior.router import interpret_player_text  # noqa: E402
+from trpg_server.characters.traits import ABILITY_CATALOG  # noqa: E402
 from trpg_server.characters.decision import (  # noqa: E402
     DeepSeekNpcDecisionAdapter,
     SafeNpcDecider,
@@ -48,6 +52,11 @@ from trpg_server.items.ai_items.recipes import (  # noqa: E402
 from trpg_server.items.ai_items.references import (  # noqa: E402
     DailyItemReferenceRequest,
     ItemReferenceCandidate,
+)
+from trpg_server.items.interaction import (  # noqa: E402
+    InteractionRequest,
+    parse_interaction_candidate,
+    validate_candidate_evidence,
 )
 from trpg_server.items.recipe_models import RecipeIngredient  # noqa: E402
 from trpg_server.story.bootstrap import (  # noqa: E402
@@ -78,7 +87,10 @@ def _settings(environment: dict[str, str]) -> DeepSeekSettings:
         configured,
         max_attempts=1,
         retry_delay_seconds=0,
-        max_tokens=min(configured.max_tokens, 256),
+        # The daily-item contract includes the physical description fields;
+        # 256 tokens can truncate an otherwise valid JSON response.  Keep the
+        # smoke call bounded, but leave enough room for one complete object.
+        max_tokens=min(configured.max_tokens, 700),
         thinking_mode="disabled",
     )
 
@@ -182,8 +194,61 @@ def _recipe_smoke(settings: DeepSeekSettings) -> dict[str, Any]:
     candidate = RecipeAssessmentCandidate.from_output(result.output, request, era)
     return {
         "status": "model_accepted",
-        "output": candidate.output_text,
+        "outputQuantity": candidate.output_quantity,
         "tokens": result.metrics.total_tokens,
+    }
+
+
+def _item_interaction_smoke(settings: DeepSeekSettings) -> dict[str, Any]:
+    """Exercise one bounded physical candidate without touching game state.
+
+    The request and summaries are deliberately synthetic.  Parsing and the
+    evidence gate are run here so a model response cannot be reported as a
+    successful smoke merely because it was valid JSON.
+    """
+
+    request = InteractionRequest(
+        actor_id="protagonist",
+        source_item_ids=("smoke_knife",),
+        target_kind="furniture",
+        target_id="smoke_locked_cabinet",
+        operation="apply",
+        action_text="用小刀检查上锁木柜的锁扣，不破坏柜门",
+        requested_effect_kind="inspect",
+    )
+    source_summaries = (
+        {
+            "itemId": "smoke_knife",
+            "name": "小刀",
+            "category": "tool",
+            "description": "钢制细长刀刃，可接触狭窄锁扣；仅作观察，不保证能开锁。",
+            "observable": "钢制、细长、刀刃、工具",
+        },
+    )
+    target_summary = {
+        "targetKind": "furniture",
+        "containerId": "smoke_locked_cabinet",
+        "furnitureKind": "cabinet",
+        "name": "上锁木柜",
+        "description": "木制柜门，外露金属锁扣，当前处于上锁状态。",
+        "contents": [],
+    }
+    result = DeepSeekItemInteractionAdapter(settings).assess(
+        request,
+        source_summaries,
+        target_summary,
+    )
+    candidate = parse_interaction_candidate(
+        result.output,
+        request,
+        allowed_ability_ids=tuple(value.ability_id for value in ABILITY_CATALOG),
+    )
+    validate_candidate_evidence(candidate, source_summaries, target_summary)
+    return {
+        "status": "model_accepted",
+        "decision": candidate.decision,
+        "difficultyBand": candidate.difficulty_band,
+        "tokens": result.total_tokens,
     }
 
 
@@ -221,6 +286,7 @@ def main() -> int:
             "item_reference",
             "daily_item_generation",
             "recipe_assessment",
+            "item_interaction",
             "weather",
         ),
         help="run one capability instead of the complete smoke set",
@@ -232,6 +298,7 @@ def main() -> int:
         ("item_reference", _reference_smoke),
         ("daily_item_generation", _daily_item_smoke),
         ("recipe_assessment", _recipe_smoke),
+        ("item_interaction", _item_interaction_smoke),
         ("weather", _weather_smoke),
     )
     if args.only is not None:

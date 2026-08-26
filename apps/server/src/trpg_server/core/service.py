@@ -57,6 +57,7 @@ class GameService:
         npc_decider: SafeNpcDecider | None = None,
         routine_director: SafeRoutineDirector | None = None,
         weather_director: SafeWeatherDirector | None = None,
+        item_interaction_adapter=None,
     ) -> None:
         self.store: EventStoreBackend = database_backend_from_environment(database_path)
         self.intent_parser = intent_parser or StructuredIntentParser(
@@ -74,7 +75,9 @@ class GameService:
         )
         self.turn_pipeline = AuthoritativeTurnPipeline(
             intent_parser=self.intent_parser,
-            resolver=LegacyCommandResolver(),
+            resolver=LegacyCommandResolver(
+                item_interaction_adapter=item_interaction_adapter,
+            ),
             npc_decider=self.npc_decider,
             routine_director=self.routine_director,
             weather_director=self.weather_director,

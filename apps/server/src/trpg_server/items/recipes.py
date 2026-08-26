@@ -11,6 +11,7 @@ from trpg_server.items.commands import (
     build_item_consumed_event,
     build_item_created_event,
 )
+from trpg_server.items.provenance import build_confirmed_item_creation_events
 from trpg_server.items.inventory import can_operate, validate_quantity
 from trpg_server.items.models import ItemDefinition, ItemInstance
 from trpg_server.items.recipe_models import (
@@ -51,6 +52,8 @@ def build_recipe_conversion_plan(
     inputs: tuple[RecipeConversionInput, ...],
     output_item_id: str,
     destination_container_id: str,
+    source_confirmation_event_id: str | None = None,
+    output_definition_status: str = "catalog",
 ) -> RecipeConversionPlan:
     """Return validated candidate events without mutating or submitting state."""
 
@@ -118,16 +121,29 @@ def build_recipe_conversion_plan(
         location_id=None,
         properties=dict(definition.properties),
     )
-    created = build_item_created_event(
-        actor_id=actor_id,
-        world_time=world_time,
-        item=output,
-    )
+    if source_confirmation_event_id is not None:
+        source, created = build_confirmed_item_creation_events(
+            actor_id=actor_id,
+            world_time=world_time,
+            item=output,
+            source_kind="recipe",
+            source_event_id=source_confirmation_event_id,
+            definition_status=output_definition_status,  # type: ignore[arg-type]
+        )
+        output_events = [source, created]
+    else:
+        output_events = [
+            build_item_created_event(
+                actor_id=actor_id,
+                world_time=world_time,
+                item=output,
+            )
+        ]
     return RecipeConversionPlan(
         recipe_key=blueprint.recipe_key,
         consumed_item_ids=tuple(value.item_id for value in inputs),
         output_item_id=output_item_id,
-        events=tuple([*consume_events, created]),
+        events=tuple([*consume_events, *output_events]),
     )
 
 

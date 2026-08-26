@@ -1,6 +1,17 @@
 """Character, NPC, relationship, cognition and inventory ownership domain."""
 
 from trpg_server.characters.body import BODY_PARTS, HAND_SLOTS
+from trpg_server.characters.checks import (
+    ABILITY_LEVEL_MODIFIERS,
+    AbilityCheckInput,
+    AbilityCheckResult,
+    PhysicalPurpose,
+    PhysicalRequirements,
+    ability_check_input_from_profile,
+    ability_modifier,
+    difficulty_to_dc,
+    resolve_ability_check,
+)
 from trpg_server.characters.equipment import (
     EquipmentCheck,
     build_external_injury_applied_event,
@@ -30,6 +41,15 @@ __all__ = [
     "ensure_inventory_containers",
     "BODY_PARTS",
     "HAND_SLOTS",
+    "ABILITY_LEVEL_MODIFIERS",
+    "AbilityCheckInput",
+    "AbilityCheckResult",
+    "PhysicalPurpose",
+    "PhysicalRequirements",
+    "ability_check_input_from_profile",
+    "ability_modifier",
+    "difficulty_to_dc",
+    "resolve_ability_check",
     "EquipmentCheck",
     "build_external_injury_applied_event",
     "build_external_injury_cleared_event",

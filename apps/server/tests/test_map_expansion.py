@@ -461,3 +461,15 @@ def test_location_capability_context_is_provider_neutral() -> None:
     assert "white_heron_kitchen_bread" in context.visible_item_ids
     assert context.catalog_affordance_ids == ()
     assert "protagonist" not in context.co_located_character_ids
+
+
+def test_location_capability_context_hides_items_in_invisible_containers() -> None:
+    state = gray_harbor_state()
+    pantry = state.containers["white_heron_kitchen_pantry"]
+    pantry.visible = False
+
+    context = build_location_capability_context(state, "white_heron_kitchen")
+
+    assert context is not None
+    assert "white_heron_kitchen_bread" not in context.visible_item_ids
+    assert "white_heron_kitchen_stew" not in context.visible_item_ids

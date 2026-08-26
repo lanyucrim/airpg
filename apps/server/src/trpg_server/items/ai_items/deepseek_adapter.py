@@ -391,9 +391,15 @@ def _daily_item_generation_payload(
     categories = "|".join(sorted(DAILY_ITEM_CATEGORIES))
     contract = (
         "严格只返回一个 JSON 对象，不要 Markdown、代码围栏或解释。格式必须是："
-        '{"schemaVersion":1,"isDailyItem":true,"itemKey":"bread_piece_each",'
+        '{"schemaVersion":2,"isDailyItem":true,"itemKey":"bread_piece_each",'
         '"canonicalName":"面包","aliases":["烤面包"],'
-        '"description":"一块供单人食用的普通烘烤面包。","category":"food",'
+        '"materials":["小麦面团"],'
+        '"formAndStructure":"表皮包裹松软内部的单块烘烤结构",'
+        '"sizeDescription":"约为成年人一餐可食用的单手大小",'
+        '"observableFeatures":["表皮呈浅褐色","切面有细小气孔"],'
+        '"unknownFacts":["具体配方无法从外观确认"],'
+        '"description":"这是一块小麦面团制成的面包，表皮包裹松软内部的单块烘烤结构，约为成年人一餐可食用的单手大小。表皮呈浅褐色，切面有细小气孔；具体配方无法从外观确认。",'
+        '"category":"food",'
         '"unitDescription":"一块单人份面包","stackable":true,'
         '"estimatedRetailUsd":1.2,"unitWeightGrams":120,"equipment":null,'
         '"consumable":{"schemaVersion":1,"quantityPerUse":1,"method":"eat",'
@@ -406,15 +412,25 @@ def _daily_item_generation_payload(
         "把香喷喷、漂亮、刚拿到等暂时感官或叙述修饰从 canonicalName 中去除；"
         "保留会改变客观种类或单位的差异，例如黑麦、带馅、瓶装和一公斤。"
         "itemKey 使用不带 daily_ 前缀的小写 ASCII 单词和下划线，并体现明确单位。"
-        "description 只写可观察的普通物品特征，不写来源、所有权、剧情意义、权限、"
-        "证据、魔法、治疗效果或行动结果。"
+        "materials 必须列出 1 到 4 项稳定主要材质；只有无法从物品种类和输入可靠确认时才可为空，"
+        "此时 unknownFacts 必须逐字包含“材质无法从现有描述确认”。"
+        "formAndStructure 写稳定外形与构造，sizeDescription 写不依赖精确测量的粗略尺寸，"
+        "observableFeatures 必须有 1 到 6 项肉眼、触摸或普通嗅觉可确认的稳定特征；"
+        "unknownFacts 只写无法确认的材质、成分或内部事实，可为空。"
+        "description 使用 1 到 3 句自然中文，并必须逐字包含 materials、formAndStructure、"
+        "sizeDescription、observableFeatures 和 unknownFacts 中的每一项，确保结构化资料不会在保存时丢失。"
+        "description 只写稳定、可观察的普通物品特征，不写暂时香味、刚获得、生锈、破损等实例状态，"
+        "也不写来源、所有权、剧情意义、权限、证据、魔法、治疗效果、用途结论或行动结果。"
+        "普通物品的材质与制造方式必须符合灰港对应的现实十九世纪末至二十世纪初技术背景；"
+        "不得生成现代合成塑料、数字电子、核技术或超自然材料。"
         "estimatedRetailUsd 是同一单位在当代美国普通零售场景的近似美元价格；"
         "unitWeightGrams 是同一完整可购买单位的克重整数。"
         "equipment 与 consumable 都必须存在且可为 null。equipment 仅在物品客观可穿戴或手持时填写，"
         "格式为 {mode:held|worn,slotIds:[身体槽位],handCount:0|1|2}。"
         "consumable 不限食物饮品，只要单次使用会消耗该物品即可填写；其效果只是待领域裁决候选，"
         "每项 requiresDomainResolution 必须为 true。普通日常生成不得给出 high/restricted 风险或 major 效果。"
-        "不要生成 usages、具体行为权限、状态、耐久或配方。不要计算克朗，不要生成物品实例、容器或地点。"
+        "不要生成 usages、具体行为权限、状态、耐久或配方。不要声称物品能撬开、切断、修复或破坏目标。"
+        "不要计算克朗，不要生成物品实例、容器或地点。"
         "若输入不是普通日常物品，令 isDailyItem=false；仍保持所有字段存在，程序会拒绝。"
     )
     user_data = json.dumps(
@@ -440,7 +456,7 @@ def _daily_item_generation_payload(
         "response_format": {"type": "json_object"},
         "thinking": {"type": settings.thinking_mode},
         "max_tokens": min(settings.max_tokens, 700),
-        "temperature": 0.2,
+        "temperature": 0.1,
     }
     if settings.thinking_mode == "enabled":
         payload["reasoning_effort"] = settings.reasoning_effort

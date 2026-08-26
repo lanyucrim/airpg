@@ -56,17 +56,15 @@ def build_location_capability_context(
             if affordance.location_id == location_id
         )
     )
+    # Expose only items that are physically anchored in this structure and
+    # whose containing furniture/container is currently visible.  The item
+    # record intentionally has no inferred visibility flag; hidden/search
+    # facts belong to the location projection and must be resolved there.
     visible_item_ids = tuple(
         sorted(
             item.item_id
             for item in state.items.values()
-            if (
-                item.location_id == location_id
-                or (
-                    state.containers.get(item.container_id) is not None
-                    and state.containers[item.container_id].location_id == location_id
-                )
-            )
+            if _item_is_visible_at_location(state, item, location_id)
         )
     )
     co_located_character_ids = tuple(
@@ -85,6 +83,32 @@ def build_location_capability_context(
         catalog_affordance_ids=catalog_affordances,
         visible_item_ids=visible_item_ids,
         co_located_character_ids=co_located_character_ids,
+    )
+
+
+def _item_is_visible_at_location(
+    state: Projection,
+    item: object,
+    location_id: str,
+) -> bool:
+    """Return whether an item can be exposed in a capability context.
+
+    Directly placed items are observable by this coarse context.  Items in a
+    container require that the container is anchored to the same structure
+    and marked visible; inaccessible character-owned containers are excluded
+    because they have no matching location anchor.
+    """
+
+    if getattr(item, "location_id", None) == location_id:
+        return True
+    container_id = getattr(item, "container_id", None)
+    if not isinstance(container_id, str):
+        return False
+    container = state.containers.get(container_id)
+    return bool(
+        container is not None
+        and container.location_id == location_id
+        and container.visible
     )
 
 

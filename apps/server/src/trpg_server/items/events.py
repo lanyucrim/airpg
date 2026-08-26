@@ -145,6 +145,15 @@ def _project_new_item(
         raise ValueError(f"item references unknown container: {item.container_id}")
     if item.location_id is not None and item.location_id not in state.locations:
         raise ValueError(f"item references unknown location: {item.location_id}")
+    # A generated daily definition is descriptive until a confirmed
+    # acquisition event precedes this creation.  Catalog instances and legacy
+    # replay records retain their existing path.
+    confirmation = getattr(state, "item_source_confirmations", {}).get(item.item_id)
+    if item.definition_id.startswith("daily_"):
+        if confirmation is None or confirmation.get("definitionStatus") != "generated_daily":
+            raise ValueError("generated daily item requires a confirmed acquisition source")
+        if confirmation.get("definitionId") != item.definition_id:
+            raise ValueError("daily item source confirmation does not match definition")
     _validate_destination_capacity(
         state,
         item,
@@ -450,6 +459,10 @@ def reject_retired_item_discarded(state: Projection, event: Event) -> None:
 @projection_handlers.register("item.destroyed", "item.expired")
 def apply_item_removed(state: Projection, event: Event) -> None:
     item = _observed_item(state, event)
+    if event.event_type == "item.destroyed" and item.is_plot_item:
+        raise ValueError(
+            "plot items require a story-confirmed removal event"
+        )
     _reject_if_equipped(state, item.item_id)
     state.items.pop(item.item_id)
 

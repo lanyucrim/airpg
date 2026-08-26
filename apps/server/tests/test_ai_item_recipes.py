@@ -307,12 +307,21 @@ def test_missing_output_uses_daily_item_generation_once() -> None:
     known = _known()[:-1]
     generation = FakeGenerationAdapter(
         {
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "isDailyItem": True,
             "itemKey": "improvised_torch_each",
             "canonicalName": "简易火把",
             "aliases": [],
-            "description": "木棍一端固定着浸过酒精的棉布。",
+            "materials": ["木棍", "棉布"],
+            "formAndStructure": "棉布紧密缠绕并固定在木棍一端",
+            "sizeDescription": "可以单手握持的短杆大小",
+            "observableFeatures": ["缠绕端明显增粗", "棉布表面湿润"],
+            "unknownFacts": ["棉布吸收液体的具体成分无法从外观确认"],
+            "description": (
+                "这是一支由木棍和棉布组成的简易火把，棉布紧密缠绕并固定在木棍一端，"
+                "可以单手握持的短杆大小。缠绕端明显增粗，棉布表面湿润；"
+                "棉布吸收液体的具体成分无法从外观确认。"
+            ),
             "category": "tool",
             "unitDescription": "一支简易火把",
             "stackable": False,

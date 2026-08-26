@@ -34,6 +34,11 @@ LOCAL_AUTHORITY_ACTION_TYPES = {
     "unequip_item",
     "purchase_item",
     "consume_item",
+    "combine_items",
+    "item_interaction",
+    "store_item",
+    "retrieve_item",
+    "repair_item",
     "environment_action",
     "wait",
 }

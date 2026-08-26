@@ -336,6 +336,17 @@ class Projection:
     discovered_exits: dict[str, set[str]] = field(default_factory=dict)
     containers: dict[str, "ItemContainer"] = field(default_factory=dict)
     items: dict[str, "ItemInstance"] = field(default_factory=dict)
+    # Cross-domain item interaction and acquisition indexes are read models
+    # derived from events.  They do not become a second source of truth.
+    item_source_confirmations: dict[str, dict[str, Any]] = field(default_factory=dict)
+    item_interactions: dict[str, dict[str, Any]] = field(default_factory=dict)
+    # Durability changes are separate audit read models.  The item record
+    # remains the current value; these indexes retain the causal snapshots
+    # needed by API consumers and replay diagnostics.
+    item_wear_records: dict[str, dict[str, Any]] = field(default_factory=dict)
+    item_repair_records: dict[str, dict[str, Any]] = field(default_factory=dict)
+    item_repair_attempts: dict[str, dict[str, Any]] = field(default_factory=dict)
+    location_item_effects: dict[str, dict[str, Any]] = field(default_factory=dict)
     relationships: dict[tuple[str, str], RelationshipState] = field(default_factory=dict)
     knowledge: dict[str, set[str]] = field(default_factory=dict)
     cognitions: dict[tuple[str, str], CognitionState] = field(default_factory=dict)
@@ -372,6 +383,8 @@ class Projection:
     max_major_beats_per_turn: int = 1
     confirmed_event_ids: set[str] = field(default_factory=set)
     event_types_by_id: dict[str, str] = field(default_factory=dict)
+    event_times_by_id: dict[str, int] = field(default_factory=dict)
+    event_actors_by_id: dict[str, str] = field(default_factory=dict)
 
     def relationship(self, subject_id: str, object_id: str) -> RelationshipState:
         key = (subject_id, object_id)

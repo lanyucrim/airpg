@@ -31,6 +31,8 @@ from trpg_server.characters import events as _character_events
 from trpg_server.characters import cognition_events as _cognition_events
 from trpg_server.characters import social_events as _social_events
 from trpg_server.items import events as _item_events
+from trpg_server.items import interaction_events as _item_interaction_events
+from trpg_server.items import wear_events as _item_wear_events
 from trpg_server.story import investigation_events as _investigation_events
 from trpg_server.story import scene_events as _scene_events
 from trpg_server.world import events as _world_events
@@ -50,6 +52,8 @@ def apply_event(state: Projection, event: Event) -> None:
     payload = event.payload
     state.confirmed_event_ids.add(event.event_id)
     state.event_types_by_id[event.event_id] = event.event_type
+    state.event_times_by_id[event.event_id] = event.world_time
+    state.event_actors_by_id[event.event_id] = event.actor_id
 
     # New domains register projection handlers incrementally. The legacy
     # branches below remain as a replay compatibility fallback until each

@@ -1,9 +1,29 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param()
 
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $failures = [System.Collections.Generic.List[string]]::new()
+
+function Get-ProjectRelativePath {
+    param(
+        [Parameter(Mandatory = $true)][string]$BasePath,
+        [Parameter(Mandatory = $true)][string]$TargetPath
+    )
+
+    # Windows PowerShell 5 runs on a framework without Path.GetRelativePath.
+    # Use the newer API when present and fall back to URI resolution otherwise.
+    try {
+        return [System.IO.Path]::GetRelativePath($BasePath, $TargetPath)
+    }
+    catch {
+        $baseUri = New-Object System.Uri(($BasePath.TrimEnd('\') + '\'))
+        $targetUri = New-Object System.Uri($TargetPath)
+        return [System.Uri]::UnescapeDataString(
+            $baseUri.MakeRelativeUri($targetUri).ToString()
+        ).Replace('/', '\')
+    }
+}
 
 $requiredFiles = @(
     'README.md',
@@ -31,11 +51,14 @@ foreach ($relativePath in $requiredFiles) {
 
 $markdownFiles = Get-ChildItem -LiteralPath $projectRoot -Recurse -Filter '*.md' -File |
     Where-Object {
-        $_.FullName -notmatch '[\\/](node_modules|\.venv|\.next|dist|\.git|\.cache|\.wrangler)[\\/]'
+        # Validation is limited to tracked/formal documentation.  Pytest
+        # basetemp directories can contain generated markdown fixtures and
+        # must not become part of the stage contract.
+        $_.FullName -notmatch '[\\/](node_modules|\.venv|\.next|dist|\.git|\.cache|\.wrangler|\.pytest-temp|\.pytest-of-[^\\/]+|\.npc-pytest|\.tmp-pytest[^\\/]*)[\\/]'
     }
 
 foreach ($file in $markdownFiles) {
-    $content = Get-Content -LiteralPath $file.FullName -Raw
+    $content = Get-Content -LiteralPath $file.FullName -Raw -Encoding UTF8
 
     $links = [regex]::Matches($content, '\[[^\]]+\]\(([^)#]+)(?:#[^)]+)?\)')
     foreach ($link in $links) {
@@ -45,7 +68,7 @@ foreach ($file in $markdownFiles) {
                 (Join-Path $file.DirectoryName $target)
             )
             if (-not (Test-Path -LiteralPath $resolvedTarget -PathType Leaf)) {
-                $relativeFile = [System.IO.Path]::GetRelativePath($projectRoot, $file.FullName)
+                $relativeFile = Get-ProjectRelativePath $projectRoot $file.FullName
                 $failures.Add("Broken link in ${relativeFile}: $target")
             }
         }
@@ -57,7 +80,7 @@ foreach ($file in $markdownFiles) {
             $null = $jsonBlocks[$index].Groups[1].Value | ConvertFrom-Json
         }
         catch {
-            $relativeFile = [System.IO.Path]::GetRelativePath($projectRoot, $file.FullName)
+            $relativeFile = Get-ProjectRelativePath $projectRoot $file.FullName
             $failures.Add("Invalid JSON block $($index + 1) in $relativeFile")
         }
     }
@@ -65,11 +88,11 @@ foreach ($file in $markdownFiles) {
 
 $principlePath = Join-Path $projectRoot 'docs/core-principles.md'
 if (Test-Path -LiteralPath $principlePath -PathType Leaf) {
-    $principleIds = Select-String -LiteralPath $principlePath -Pattern '^### (P-\d+)' |
+    $principleIds = Select-String -LiteralPath $principlePath -Pattern '^### (P-\d+)' -Encoding UTF8 |
         ForEach-Object { $_.Matches.Groups[1].Value }
 
-    if ($principleIds.Count -ne 14) {
-        $failures.Add("Expected 14 principles, found $($principleIds.Count)")
+    if ($principleIds.Count -ne 17) {
+        $failures.Add("Expected 17 principles, found $($principleIds.Count)")
     }
 
     $duplicatePrinciples = $principleIds | Group-Object | Where-Object Count -gt 1
@@ -108,7 +131,7 @@ foreach ($entry in $coverageRequirements.GetEnumerator()) {
         continue
     }
 
-    $content = Get-Content -LiteralPath $path -Raw
+    $content = Get-Content -LiteralPath $path -Raw -Encoding UTF8
     foreach ($requiredText in $entry.Value) {
         if (-not $content.Contains($requiredText)) {
             $failures.Add("Missing coverage text '$requiredText' in $($entry.Key)")

@@ -90,7 +90,7 @@ def test_v42_compilation_does_not_depend_on_deleted_v3_source() -> None:
     catalog = compile_v42_markdown(SOURCE, "gray-harbor-black-tide-throne")
     assert catalog.source_document == SOURCE.name
     assert catalog.source_sha256 == (
-        "601ef8717bd9bbb239a81d487f6d3af8e70f93ab2f1061620595058735c9bc4f"
+        "4795d15a7b03925110456bae6573f66cf7e05bd8cc0017d1f924bee42bef8f3a"
     )
 
 
